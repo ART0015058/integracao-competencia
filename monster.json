@@ -1,19 +1,330 @@
 {
-  "posts": [
+  "monstros": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "name":"Apceros",
+      "type": "pequeno",
+      "especie": "herbívoro",
+      "descricao":"animal de campo",
+      "elemento": "nenhum",
+      "afliçoes": "nenhum",
+      "locais":[
+        {
+          "id":1,
+          "nome":"Wildspire Waste"
+        },
+        {
+          "id":2,
+          "nome":"Guiding Lands"
+        }
+        ],
+      "caracteristicas-dano": [
+        {
+          "id":1,
+          "zona-de-dano": [
+            {
+              "id":1,
+              "parte": "corpo",
+              "tipo": [
+                {
+                  "id":1,
+                  "tipo-de-ataque": "corte",
+                  "eficiencia": 80
+                },
+                {
+                  "id":2,
+                  "tipo-de-ataque": "impacto",
+                  "eficiencia": 100
+                },
+                {
+                  "id":3,
+                  "tipo-de-ataque": "munição",
+                  "eficiencia": 90
+                },
+                {
+                  "id":4,
+                  "tipo-de-ataque": "elemental",
+                  "elemento":"fogo",
+                  "eficiencia": 40
+                },
+                {
+                  "id":5,
+                  "tipo-de-ataque": "elemental",
+                  "elemento":"agua",
+                  "eficiencia": 20
+                },
+                {
+                  "id":6,
+                  "tipo-de-ataque": "elemental",
+                  "elemento":"trovão",
+                  "eficiencia": 40
+                },
+                {
+                  "id":7,
+                  "tipo-de-ataque": "elemental",
+                  "elemento":"dragão",
+                  "eficiencia": 10
+                },
+                {
+                  "id":8,
+                  "tipo-de-ataque": "elemental",
+                  "elemento":"gelo",
+                  "eficiencia": 30
+                }
+              ]
+            }
+          ]
+        }        
+      ],
+      "caracteristicas-aflicoes":[
+        {
+            "id":1,
+            "tipo-de-aflicao": "veneno",
+            "resistencia": 200,
+            "duracao": "30 sec",
+            "dano": 60
+        },
+        {
+          "id":2,
+          "tipo-de-aflicao": "paralisia",
+          "resistencia": 100,
+          "duracao": "10 sec",
+          "dano": 0
+      },
+      {
+        "id":3,
+        "tipo-de-aflicao": "sono",
+        "resistencia": 50,
+        "duracao": "40 sec",
+        "dano": 0
+      }        
+      ],
+      "recompensas": [],
+      "img": ,
+    },
     {
       "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+      "name":"Apceros",
+      "type": "pequeno",
+      "especie": "herbívoro",
+      "descricao":"animal de campo",
+      "elemento": "nenhum",
+      "afliçoes": "nenhum",
+      "locais":"",
+      "resitencias": "",
+      "fraquezas":"",
+      "recompensas":"",
+      "img": ,
+    },
+    {
+      "id": 1,
+      "name":"Apceros",
+      "type": "pequeno",
+      "especie": "herbívoro",
+      "descricao":"animal de campo",
+      "elemento": "nenhum",
+      "afliçoes": "nenhum",
+      "locais":"",
+      "resitencias": "",
+      "fraquezas":"",
+      "recompensas":"",
+      "img": ,
+    },
+    {
+      "id": 1,
+      "name":"Apceros",
+      "type": "pequeno",
+      "especie": "herbívoro",
+      "descricao":"animal de campo",
+      "elemento": "nenhum",
+      "afliçoes": "nenhum",
+      "locais":"",
+      "resitencias": "",
+      "fraquezas":"",
+      "recompensas":"",
+      "img": ,
+    },
+    {
+      "id": 1,
+      "name":"Apceros",
+      "type": "pequeno",
+      "especie": "herbívoro",
+      "descricao":"animal de campo",
+      "elemento": "nenhum",
+      "afliçoes": "nenhum",
+      "locais":"",
+      "resitencias": "",
+      "fraquezas":"",
+      "recompensas":"",
+      "img": ,
+    },
+    {
+      "id": 1,
+      "name":"Apceros",
+      "type": "pequeno",
+      "especie": "herbívoro",
+      "descricao":"animal de campo",
+      "elemento": "nenhum",
+      "afliçoes": "nenhum",
+      "locais":"",
+      "resitencias": "",
+      "fraquezas":"",
+      "recompensas":"",
+      "img": ,
+    },
+    {
+      "id": 1,
+      "name":"Apceros",
+      "type": "pequeno",
+      "especie": "herbívoro",
+      "descricao":"animal de campo",
+      "elemento": "nenhum",
+      "afliçoes": "nenhum",
+      "locais":"",
+      "resitencias": "",
+      "fraquezas":"",
+      "recompensas":"",
+      "img": ,
+    },
+    {
+      "id": 1,
+      "name":"Apceros",
+      "type": "pequeno",
+      "especie": "herbívoro",
+      "descricao":"animal de campo",
+      "elemento": "nenhum",
+      "afliçoes": "nenhum",
+      "locais":"",
+      "resitencias": "",
+      "fraquezas":"",
+      "recompensas":"",
+      "img": ,
+    },
+    {
+      "id": 1,
+      "name":"Apceros",
+      "type": "pequeno",
+      "especie": "herbívoro",
+      "descricao":"animal de campo",
+      "elemento": "nenhum",
+      "afliçoes": "nenhum",
+      "locais":"",
+      "resitencias": "",
+      "fraquezas":"",
+      "recompensas":"",
+      "img": ,
+    },
+    {
+      "id": 1,
+      "name":"Apceros",
+      "type": "pequeno",
+      "especie": "herbívoro",
+      "descricao":"animal de campo",
+      "elemento": "nenhum",
+      "afliçoes": "nenhum",
+      "locais":"",
+      "resitencias": "",
+      "fraquezas":"",
+      "recompensas":"",
+      "img": ,
+    },
+    {
+      "id": 1,
+      "name":"Apceros",
+      "type": "pequeno",
+      "especie": "herbívoro",
+      "descricao":"animal de campo",
+      "elemento": "nenhum",
+      "afliçoes": "nenhum",
+      "locais":"",
+      "resitencias": "",
+      "fraquezas":"",
+      "recompensas":"",
+      "img": ,
+    },
+    {
+      "id": 1,
+      "name":"Apceros",
+      "type": "pequeno",
+      "especie": "herbívoro",
+      "descricao":"animal de campo",
+      "elemento": "nenhum",
+      "afliçoes": "nenhum",
+      "locais":"",
+      "resitencias": "",
+      "fraquezas":"",
+      "recompensas":"",
+      "img": ,
+    },
+    {
+      "id": 1,
+      "name":"Apceros",
+      "type": "pequeno",
+      "especie": "herbívoro",
+      "descricao":"animal de campo",
+      "elemento": "nenhum",
+      "afliçoes": "nenhum",
+      "locais":"",
+      "resitencias": "",
+      "fraquezas":"",
+      "recompensas":"",
+      "img": ,
+    },
+    {
+      "id": 1,
+      "name":"Apceros",
+      "type": "pequeno",
+      "especie": "herbívoro",
+      "descricao":"animal de campo",
+      "elemento": "nenhum",
+      "afliçoes": "nenhum",
+      "locais":"",
+      "resitencias": "",
+      "fraquezas":"",
+      "recompensas":"",
+      "img": ,
+    },
+    {
+      "id": 1,
+      "name":"Apceros",
+      "type": "pequeno",
+      "especie": "herbívoro",
+      "descricao":"animal de campo",
+      "elemento": "nenhum",
+      "afliçoes": "nenhum",
+      "locais":"",
+      "resitencias": "",
+      "fraquezas":"",
+      "recompensas":"",
+      "img": ,
+    },
+    {
+      "id": 1,
+      "name":"Apceros",
+      "type": "pequeno",
+      "especie": "herbívoro",
+      "descricao":"animal de campo",
+      "elemento": "nenhum",
+      "afliçoes": "nenhum",
+      "locais":"",
+      "resitencias": "",
+      "fraquezas":"",
+      "recompensas":"",
+      "img": ,
+    },
+    {
+      "id": 1,
+      "name":"Apceros",
+      "type": "pequeno",
+      "especie": "herbívoro",
+      "descricao":"animal de campo",
+      "elemento": "nenhum",
+      "afliçoes": "nenhum",
+      "locais":"",
+      "resitencias": "",
+      "fraquezas":"",
+      "recompensas":"",
+      "img": ,
+    },
+    
 }
