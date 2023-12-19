@@ -1,4 +1,5 @@
 import { handleErrors } from "./exception.js";
+import jsonData from './monster.json';
 
 fetch('https://mhw-db.com/monsters')
 then(response => response.json())
@@ -13,6 +14,14 @@ export const getAllMonsters = async () => {
         console.log('Error >>>', error);
     }
 }
+
+export const filtrarMonstrosPequenos = () => {
+  return jsonData.monstros.filter(monstro => monstro.tipo === "pequeno");
+}
+export const filtrarMonstrosGrandes = () => {
+  return jsonData.monstros.filter(monstro => monstro.tipo === "grande");
+}
+
 
 export const adicionarMonstroGrande = async (id, nome) => {
     const novoMonstroGrande = {
