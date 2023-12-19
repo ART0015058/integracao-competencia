@@ -1,0 +1,8 @@
+main{
+    background-image: url('./assets/fundo/papel.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nav-item{
+    font-weight: 600;
+}
