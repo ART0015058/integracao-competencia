@@ -4178,22 +4178,31 @@
           "img": "assets/imagens/ancient_leshen.jpg"
         },
         {
-          "id": 19,
-          "name":"Ancient Leshen",
+          "id": 2,
+          "name":"Anjanath",
           "type": "grande",
-          "especie": "relict",
-          "descricao":"Um velho Leshen que chegou através de um portal para assumir o controle da Ancient Forest. Às vezes reverenciado como uma divindade indígena.",
-          "elemento": "nenhum",
+          "especie": "brute wyvern",
+          "descricao":" O Anjanath patrulha a Ancient Forest em busca de sua refeição favorita, Aptonoth. Este monstro beligerante atacará qualquer coisa sem a menor provocação.",
+          "elemento": [
+            {
+              "id":1,
+              "elemento":"fogo"
+            }
+          ],
           "aflicoes": [
             {
               "id":1,
-              "aflicao":"sangramento"
+              "aflicao":"fireblight"
             }
           ],
           "locais":[
             {
               "id":1,
               "nome":"Ancient Forest"
+            },
+            {
+              "id":2,
+              "nome":"Wildspire Waste"
             }
           ],
           "caracteristicas": [
@@ -4211,17 +4220,17 @@
                         {
                           "id":1,
                           "maneira":"corte",
-                          "valor": 45
+                          "valor": 30
                         },
                         {
                           "id":2,
                           "maneira":"impacto",
-                          "valor": 45
+                          "valor": 30
                         },
                         {
                           "id":3,
                           "maneira":"munição",
-                          "valor": 25
+                          "valor": 45
                         }
                       ]                  
                     },
@@ -4232,27 +4241,27 @@
                         {
                           "id":1,
                           "maneira":"fogo",
-                          "valor": 20
+                          "valor": 0
                         },
                         {
                           "id":2,
                           "maneira":"agua",
-                          "valor": 0
+                          "valor": 15
                         },
                         {
                           "id":3,
                           "maneira":"trovão",
-                          "valor": 10 
+                          "valor": 5 
                         },
                         {
                           "id":4,
                           "maneira":"gelo",
-                          "valor": 5
+                          "valor": 10
                         },
                         {
                           "id":5,
                           "maneira":"dragão",
-                          "valor": 10
+                          "valor": 0
                         }
                       ]
                     }
@@ -4269,17 +4278,918 @@
                         {
                           "id":1,
                           "maneira":"corte",
-                          "valor": 65
+                          "valor": 70
                         },
                         {
                           "id":2,
                           "maneira":"impacto",
+                          "valor": 70
+                        },
+                        {
+                          "id":3,
+                          "maneira":"munição",
                           "valor": 65
+                        }
+                      ]                  
+                    },
+                    {
+                      "id":2,
+                      "tipo":"elemental",
+                      "eficiencia":[
+                        {
+                          "id":1,
+                          "maneira":"fogo",
+                          "valor": 0
+                        },
+                        {
+                          "id":2,
+                          "maneira":"agua",
+                          "valor": 25
+                        },
+                        {
+                          "id":3,
+                          "maneira":"trovão",
+                          "valor": 10
+                        },
+                        {
+                          "id":4,
+                          "maneira":"gelo",
+                          "valor": 15
+                        },
+                        {
+                          "id":5,
+                          "maneira":"dragão",
+                          "valor": 5
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id":3,
+                  "parte": "pescoço",
+                  "tipo": [
+                    {
+                      "id":1,
+                      "tipo": "fisico",
+                      "eficiencia": [
+                        {
+                          "id":1,
+                          "maneira":"corte",
+                          "valor": 30
+                        },
+                        {
+                          "id":2,
+                          "maneira":"impacto",
+                          "valor": 30
+                        },
+                        {
+                          "id":3,
+                          "maneira":"munição",
+                          "valor": 10
+                        }
+                      ]                  
+                    },
+                    {
+                      "id":2,
+                      "tipo":"elemental",
+                      "eficiencia":[
+                        {
+                          "id":1,
+                          "maneira":"fogo",
+                          "valor": 0
+                        },
+                        {
+                          "id":2,
+                          "maneira":"agua",
+                          "valor": 20
+                        },
+                        {
+                          "id":3,
+                          "maneira":"trovão",
+                          "valor": 5 
+                        },
+                        {
+                          "id":4,
+                          "maneira":"gelo",
+                          "valor": 15
+                        },
+                        {
+                          "id":5,
+                          "maneira":"dragão",
+                          "valor": 5
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id":4,
+                  "parte": "pernas",
+                  "tipo": [
+                    {
+                      "id":1,
+                      "tipo": "fisico",
+                      "eficiencia": [
+                        {
+                          "id":1,
+                          "maneira":"corte",
+                          "valor": 30
+                        },
+                        {
+                          "id":2,
+                          "maneira":"impacto",
+                          "valor": 30
+                        },
+                        {
+                          "id":3,
+                          "maneira":"munição",
+                          "valor": 10
+                        }
+                      ]                  
+                    },
+                    {
+                      "id":2,
+                      "tipo":"elemental",
+                      "eficiencia":[
+                        {
+                          "id":1,
+                          "maneira":"fogo",
+                          "valor": 0
+                        },
+                        {
+                          "id":2,
+                          "maneira":"agua",
+                          "valor": 15
+                        },
+                        {
+                          "id":3,
+                          "maneira":"trovão",
+                          "valor": 5 
+                        },
+                        {
+                          "id":4,
+                          "maneira":"gelo",
+                          "valor": 10
+                        },
+                        {
+                          "id":5,
+                          "maneira":"dragão",
+                          "valor": 0
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id":5,
+                  "parte": "asas",
+                  "tipo": [
+                    {
+                      "id":1,
+                      "tipo": "fisico",
+                      "eficiencia": [
+                        {
+                          "id":1,
+                          "maneira":"corte",
+                          "valor": 80
+                        },
+                        {
+                          "id":2,
+                          "maneira":"impacto",
+                          "valor": 45
+                        },
+                        {
+                          "id":3,
+                          "maneira":"munição",
+                          "valor": 90
+                        }
+                      ]                  
+                    },
+                    {
+                      "id":2,
+                      "tipo":"elemental",
+                      "eficiencia":[
+                        {
+                          "id":1,
+                          "maneira":"fogo",
+                          "valor": 0
+                        },
+                        {
+                          "id":2,
+                          "maneira":"agua",
+                          "valor": 30
+                        },
+                        {
+                          "id":3,
+                          "maneira":"trovão",
+                          "valor": 15
+                        },
+                        {
+                          "id":4,
+                          "maneira":"gelo",
+                          "valor": 20
+                        },
+                        {
+                          "id":5,
+                          "maneira":"dragão",
+                          "valor": 10
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id":6,
+                  "parte": "cauda",
+                  "tipo": [
+                    {
+                      "id":1,
+                      "tipo": "fisico",
+                      "eficiencia": [
+                        {
+                          "id":1,
+                          "maneira":"corte",
+                          "valor": 60
+                        },
+                        {
+                          "id":2,
+                          "maneira":"impacto",
+                          "valor": 60
+                        },
+                        {
+                          "id":3,
+                          "maneira":"munição",
+                          "valor": 75
+                        }
+                      ]                  
+                    },
+                    {
+                      "id":2,
+                      "tipo":"elemental",
+                      "eficiencia":[
+                        {
+                          "id":1,
+                          "maneira":"fogo",
+                          "valor": 0
+                        },
+                        {
+                          "id":2,
+                          "maneira":"agua",
+                          "valor": 20
+                        },
+                        {
+                          "id":3,
+                          "maneira":"trovão",
+                          "valor": 10
+                        },
+                        {
+                          "id":4,
+                          "maneira":"gelo",
+                          "valor": 15
+                        },
+                        {
+                          "id":5,
+                          "maneira":"dragão",
+                          "valor": 5
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id":7,
+                  "parte": "nariz",
+                  "tipo": [
+                    {
+                      "id":1,
+                      "tipo": "fisico",
+                      "eficiencia": [
+                        {
+                          "id":1,
+                          "maneira":"corte",
+                          "valor": 80
+                        },
+                        {
+                          "id":2,
+                          "maneira":"impacto",
+                          "valor": 75
+                        },
+                        {
+                          "id":3,
+                          "maneira":"munição",
+                          "valor": 90
+                        }
+                      ]                  
+                    },
+                    {
+                      "id":2,
+                      "tipo":"elemental",
+                      "eficiencia":[
+                        {
+                          "id":1,
+                          "maneira":"fogo",
+                          "valor": 0
+                        },
+                        {
+                          "id":2,
+                          "maneira":"agua",
+                          "valor": 30
+                        },
+                        {
+                          "id":3,
+                          "maneira":"trovão",
+                          "valor": 15
+                        },
+                        {
+                          "id":4,
+                          "maneira":"gelo",
+                          "valor": 20
+                        },
+                        {
+                          "id":5,
+                          "maneira":"dragão",
+                          "valor": 10
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id":6,
+                  "parte": "pernas quebradas",
+                  "tipo": [
+                    {
+                      "id":1,
+                      "tipo": "fisico",
+                      "eficiencia": [
+                        {
+                          "id":1,
+                          "maneira":"corte",
+                          "valor": 45
+                        },
+                        {
+                          "id":2,
+                          "maneira":"impacto",
+                          "valor": 45
                         },
                         {
                           "id":3,
                           "maneira":"munição",
                           "valor": 50
+                        }
+                      ]                  
+                    },
+                    {
+                      "id":2,
+                      "tipo":"elemental",
+                      "eficiencia":[
+                        {
+                          "id":1,
+                          "maneira":"fogo",
+                          "valor": 0
+                        },
+                        {
+                          "id":2,
+                          "maneira":"agua",
+                          "valor": 15
+                        },
+                        {
+                          "id":3,
+                          "maneira":"trovão",
+                          "valor": 5
+                        },
+                        {
+                          "id":4,
+                          "maneira":"gelo",
+                          "valor": 10
+                        },
+                        {
+                          "id":5,
+                          "maneira":"dragão",
+                          "valor": 0
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id":7,
+                  "parte": "cauda cortada",
+                  "tipo": [
+                    {
+                      "id":1,
+                      "tipo": "fisico",
+                      "eficiencia": [
+                        {
+                          "id":1,
+                          "maneira":"corte",
+                          "valor": 60
+                        },
+                        {
+                          "id":2,
+                          "maneira":"impacto",
+                          "valor": 60
+                        },
+                        {
+                          "id":3,
+                          "maneira":"munição",
+                          "valor": 75
+                        }
+                      ]                  
+                    },
+                    {
+                      "id":2,
+                      "tipo":"elemental",
+                      "eficiencia":[
+                        {
+                          "id":1,
+                          "maneira":"fogo",
+                          "valor": 0
+                        },
+                        {
+                          "id":2,
+                          "maneira":"agua",
+                          "valor": 20
+                        },
+                        {
+                          "id":3,
+                          "maneira":"trovão",
+                          "valor": 10
+                        },
+                        {
+                          "id":4,
+                          "maneira":"gelo",
+                          "valor": 15
+                        },
+                        {
+                          "id":5,
+                          "maneira":"dragão",
+                          "valor": 5
+                        }
+                      ]
+                    }
+                  ]
+                }                  
+              ]
+            },
+            {
+              "id":2,
+              "resistencia-aflicoes": [
+                {
+                  "id":1,
+                  "aflicao":"veneno",
+                  "resistencia-inicial":550,
+                  "reducao-natural":"-5 a cada 10 sec",
+                  "duracao": "20 sec",
+                  "dano-total": 320
+                },
+                {
+                  "id":2,
+                  "aflicao":"paralisia",
+                  "resistencia-inicial":570,
+                  "reducao-natural":"-5 a cada 10 sec",
+                  "duracao": "10 sec",
+                  "dano-total": 0
+                },
+                {
+                  "id":3,
+                  "aflicao":"sono",
+                  "resistencia-inicial":550,
+                  "reducao-natural":"-5 a cada 10 sec",
+                  "duracao": "40 sec",
+                  "dano-total": 0
+                },
+                {
+                  "id":4,
+                  "aflicao":"explosão",
+                  "resistencia-inicial":1920,
+                  "reducao-natural":"nenhum",
+                  "duracao": "instantânea",
+                  "dano-total": 100
+                },
+                {
+                  "id":5,
+                  "aflicao":"nocaute",
+                  "resistencia-inicial":630,
+                  "reducao-natural":"-5 a cada 10 sec",
+                  "duracao": "7 sec",
+                  "dano-total": 0
+                },
+                {
+                  "id":6,
+                  "aflicao":"montaria",
+                  "resistencia-inicial":550,
+                  "reducao-natural":"nenhum",
+                  "duracao": "até derrubar ou ser derrubado",
+                  "dano-total": 0
+                }
+              ]
+            }
+          ],      
+          "recompensas": [
+            {
+              "id":1,
+              "low-rank":[           
+                {
+                  "id":1, 
+                  "item":"Anjanath Scale",
+                  "chance":["35%", "25%", "50%", "40%","50%", "100%"],
+                  "origem":["Corpo do monstro", "Cauda cortada", "Gota brilhante","Plunderblade","Palicoes", "Pegadas"]
+                },
+                {
+                  "id":2, 
+                  "item":"Anjanath Pelt",
+                  "chance":["25%", "32%"],
+                  "origem":["Corpo do monstro", "Plunderblade"]
+                },
+                {
+                  "id":3,
+                  "item":"Anjanath Nosebone",
+                  "chance":"20%",
+                  "origem":"Corpo do monstro"
+                },
+                {
+                  "id":4,
+                  "item":"Anjanath Fang",
+                  "chance":["15%", "28%", "26%", "28%"],
+                  "origem":["Corpo do monstro","Gota brilhante", "Plunderblade", "Palicoes"]
+                },
+                {
+                  "id":5,
+                  "item":"Anjanath Plate",
+                  "cahnce":["5%", "5%", "2%"],
+                  "origem":["Corpo do monstro","Cauda cortada", "Plunderblade"]
+                },
+                {
+                  "id":6,
+                  "item":"Anjanath Tail",
+                  "cahnce":"70%",
+                  "origem":"Cauda cortada"
+                }
+              ]
+            },
+            {
+              "id":2, 
+              "high-rank":[           
+                {
+                  "id":1, 
+                  "item":"Anjanath Scale+",
+                  "chance":["34%", "20%", "50%", "40%","50%", "100%"],
+                  "origem":["Corpo do monstro", "Cauda cortada", "Gota brilhante","Plunderblade","Palicoes", "Pegadas"]
+                },
+                {
+                  "id":2, 
+                  "item":"Anjanath Pelt+",
+                  "chance":["24%", "33%"],
+                  "origem":["Corpo do monstro", "Plunderblade"]
+                },
+                {
+                  "id":3,
+                  "item":"Anjanath Nosebone+",
+                  "chance":"20%",
+                  "origem":"Corpo do monstro"
+                },
+                {
+                  "id":4,
+                  "item":"Anjanath Fang+",
+                  "chance":["15%", "28%", "26%", "28%"],
+                  "origem":["Corpo do monstro","Gota brilhante", "Plunderblade", "Palicoes"]
+                },
+                {
+                  "id":5,
+                  "item":"Anjanath Plate",
+                  "cahnce":["5%", "7%", "2%"],
+                  "origem":["Corpo do monstro","Cauda cortada", "Plunderblade"]
+                },
+                {
+                  "id":6,
+                  "item":"Anjanath Tail",
+                  "cahnce":"70%",
+                  "origem":"Cauda cortada"
+                },
+                {
+                  "id":7,
+                  "item":"Anjanath Gem",
+                  "cahnce":["2%", "3%", "1%"],
+                  "origem":["Corpo do monstro","Cauda cortada", "Plunderblade"]
+                },
+                {
+                  "id":8,
+                  "item":"Wyvern Tear",
+                  "cahnce":["22%", "22%"],
+                  "origem":["Gota brilhante","Palicoes"]
+                }
+              ]
+            }
+          ],
+          "partes-quebraveis": [
+            {
+              "id":1,
+              "parte": "cabeça"
+            },
+            {
+              "id":2,
+              "parte": "corpo"
+            },
+            {
+              "id":3,
+              "parte": "perna direita"
+            },
+            {
+              "id":4,
+              "parte": "perna esquerda"
+            },
+            {
+              "id": 5,
+              "parte":"cauda"
+            }
+    
+          ],
+          "icone": "assets/icones/anjanath_icon.png",
+          "img": "assets/imagens/anjanath.jpg"
+        },        
+        {
+          "id": 3,
+          "name":"Barroth",
+          "type": "grande",
+          "especie": "brute wyvern",
+          "descricao":" Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
+          "elemento": "nenhum",
+          "aflicoes": [
+            {
+              "id":1,
+              "aflicao":"waterblight"
+            },
+            {
+              "id":2,
+              "aflicao":"nocaute"
+            }
+          ],
+          "locais":[            
+            {
+              "id":1,
+              "nome":"Wildspire Waste"
+            }
+          ],
+          "caracteristicas": [
+            {
+              "id":1,
+              "zona-de-dano": [
+                {
+                  "id":1,
+                  "parte": "corpo",
+                  "tipo": [
+                    {
+                      "id":1,
+                      "tipo": "fisico",
+                      "eficiencia": [
+                        {
+                          "id":1,
+                          "maneira":"corte",
+                          "valor": 46
+                        },
+                        {
+                          "id":2,
+                          "maneira":"impacto",
+                          "valor": 46
+                        },
+                        {
+                          "id":3,
+                          "maneira":"munição",
+                          "valor": 50
+                        }
+                      ]                  
+                    },
+                    {
+                      "id":2,
+                      "tipo":"elemental",
+                      "eficiencia":[
+                        {
+                          "id":1,
+                          "maneira":"fogo",
+                          "valor": 20
+                        },
+                        {
+                          "id":2,
+                          "maneira":"agua",
+                          "valor": 0
+                        },
+                        {
+                          "id":3,
+                          "maneira":"trovão",
+                          "valor": 0
+                        },
+                        {
+                          "id":4,
+                          "maneira":"gelo",
+                          "valor": 10
+                        },
+                        {
+                          "id":5,
+                          "maneira":"dragão",
+                          "valor": 5
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id":2,
+                  "parte": "cabeça",
+                  "tipo": [
+                    {
+                      "id":1,
+                      "tipo": "fisico",
+                      "eficiencia": [
+                        {
+                          "id":1,
+                          "maneira":"corte",
+                          "valor": 22
+                        },
+                        {
+                          "id":2,
+                          "maneira":"impacto",
+                          "valor": 25
+                        },
+                        {
+                          "id":3,
+                          "maneira":"munição",
+                          "valor": 10
+                        }
+                      ]                  
+                    },
+                    {
+                      "id":2,
+                      "tipo":"elemental",
+                      "eficiencia":[
+                        {
+                          "id":1,
+                          "maneira":"fogo",
+                          "valor": 20
+                        },
+                        {
+                          "id":2,
+                          "maneira":"agua",
+                          "valor": 0
+                        },
+                        {
+                          "id":3,
+                          "maneira":"trovão",
+                          "valor": 0
+                        },
+                        {
+                          "id":4,
+                          "maneira":"gelo",
+                          "valor": 15
+                        },
+                        {
+                          "id":5,
+                          "maneira":"dragão",
+                          "valor": 10
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id":3,
+                  "parte": "braços",
+                  "tipo": [
+                    {
+                      "id":1,
+                      "tipo": "fisico",
+                      "eficiencia": [
+                        {
+                          "id":1,
+                          "maneira":"corte",
+                          "valor": 80
+                        },
+                        {
+                          "id":2,
+                          "maneira":"impacto",
+                          "valor": 85
+                        },
+                        {
+                          "id":3,
+                          "maneira":"munição",
+                          "valor": 75
+                        }
+                      ]                  
+                    },
+                    {
+                      "id":2,
+                      "tipo":"elemental",
+                      "eficiencia":[
+                        {
+                          "id":1,
+                          "maneira":"fogo",
+                          "valor": 30
+                        },
+                        {
+                          "id":2,
+                          "maneira":"agua",
+                          "valor": 0
+                        },
+                        {
+                          "id":3,
+                          "maneira":"trovão",
+                          "valor": 0 
+                        },
+                        {
+                          "id":4,
+                          "maneira":"gelo",
+                          "valor": 10
+                        },
+                        {
+                          "id":5,
+                          "maneira":"dragão",
+                          "valor": 5
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id":4,
+                  "parte": "pernas",
+                  "tipo": [
+                    {
+                      "id":1,
+                      "tipo": "fisico",
+                      "eficiencia": [
+                        {
+                          "id":1,
+                          "maneira":"corte",
+                          "valor": 40
+                        },
+                        {
+                          "id":2,
+                          "maneira":"impacto",
+                          "valor": 35
+                        },
+                        {
+                          "id":3,
+                          "maneira":"munição",
+                          "valor": 25
+                        }
+                      ]                  
+                    },
+                    {
+                      "id":2,
+                      "tipo":"elemental",
+                      "eficiencia":[
+                        {
+                          "id":1,
+                          "maneira":"fogo",
+                          "valor": 20
+                        },
+                        {
+                          "id":2,
+                          "maneira":"agua",
+                          "valor": 0
+                        },
+                        {
+                          "id":3,
+                          "maneira":"trovão",
+                          "valor": 0 
+                        },
+                        {
+                          "id":4,
+                          "maneira":"gelo",
+                          "valor": 10
+                        },
+                        {
+                          "id":5,
+                          "maneira":"dragão",
+                          "valor": 5
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id":5,
+                  "parte": "cauda",
+                  "tipo": [
+                    {
+                      "id":1,
+                      "tipo": "fisico",
+                      "eficiencia": [
+                        {
+                          "id":1,
+                          "maneira":"corte",
+                          "valor": 55
+                        },
+                        {
+                          "id":2,
+                          "maneira":"impacto",
+                          "valor": 50
+                        },
+                        {
+                          "id":3,
+                          "maneira":"munição",
+                          "valor": 40
                         }
                       ]                  
                     },
@@ -4300,25 +5210,25 @@
                         {
                           "id":3,
                           "maneira":"trovão",
-                          "valor": 15
+                          "valor": 0
                         },
                         {
                           "id":4,
                           "maneira":"gelo",
-                          "valor": 10
+                          "valor": 15
                         },
                         {
                           "id":5,
                           "maneira":"dragão",
-                          "valor": 15
+                          "valor": 10
                         }
                       ]
                     }
                   ]
                 },
                 {
-                  "id":3,
-                  "parte": "braços",
+                  "id":6,
+                  "parte": "corpo enlameado",
                   "tipo": [
                     {
                       "id":1,
@@ -4327,12 +5237,128 @@
                         {
                           "id":1,
                           "maneira":"corte",
-                          "valor": 45
+                          "valor": 24
                         },
                         {
                           "id":2,
                           "maneira":"impacto",
-                          "valor": 45
+                          "valor": 24
+                        },
+                        {
+                          "id":3,
+                          "maneira":"munição",
+                          "valor": 20
+                        }
+                      ]                  
+                    },
+                    {
+                      "id":2,
+                      "tipo":"elemental",
+                      "eficiencia":[
+                        {
+                          "id":1,
+                          "maneira":"fogo",
+                          "valor": 0
+                        },
+                        {
+                          "id":2,
+                          "maneira":"agua",
+                          "valor": 80
+                        },
+                        {
+                          "id":3,
+                          "maneira":"trovão",
+                          "valor": 0
+                        },
+                        {
+                          "id":4,
+                          "maneira":"gelo",
+                          "valor": 15
+                        },
+                        {
+                          "id":5,
+                          "maneira":"dragão",
+                          "valor": 10
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id":7,
+                  "parte": "cabeça enlameada",
+                  "tipo": [
+                    {
+                      "id":1,
+                      "tipo": "fisico",
+                      "eficiencia": [
+                        {
+                          "id":1,
+                          "maneira":"corte",
+                          "valor": 20
+                        },
+                        {
+                          "id":2,
+                          "maneira":"impacto",
+                          "valor": 24
+                        },
+                        {
+                          "id":3,
+                          "maneira":"munição",
+                          "valor": 9
+                        }
+                      ]                  
+                    },
+                    {
+                      "id":2,
+                      "tipo":"elemental",
+                      "eficiencia":[
+                        {
+                          "id":1,
+                          "maneira":"fogo",
+                          "valor": 0
+                        },
+                        {
+                          "id":2,
+                          "maneira":"agua",
+                          "valor": 80
+                        },
+                        {
+                          "id":3,
+                          "maneira":"trovão",
+                          "valor": 0
+                        },
+                        {
+                          "id":4,
+                          "maneira":"gelo",
+                          "valor": 15
+                        },
+                        {
+                          "id":5,
+                          "maneira":"dragão",
+                          "valor": 10
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id":8,
+                  "parte": "braços enlameados",
+                  "tipo": [
+                    {
+                      "id":1,
+                      "tipo": "fisico",
+                      "eficiencia": [
+                        {
+                          "id":1,
+                          "maneira":"corte",
+                          "valor": 35
+                        },
+                        {
+                          "id":2,
+                          "maneira":"impacto",
+                          "valor": 38
                         },
                         {
                           "id":3,
@@ -4348,22 +5374,22 @@
                         {
                           "id":1,
                           "maneira":"fogo",
-                          "valor": 20
+                          "valor": 0
                         },
                         {
                           "id":2,
                           "maneira":"agua",
-                          "valor": 0
+                          "valor": 80
                         },
                         {
                           "id":3,
                           "maneira":"trovão",
-                          "valor": 10 
+                          "valor": 0 
                         },
                         {
                           "id":4,
                           "maneira":"gelo",
-                          "valor": 5
+                          "valor": 15
                         },
                         {
                           "id":5,
@@ -4375,8 +5401,8 @@
                   ]
                 },
                 {
-                  "id":4,
-                  "parte": "pernas",
+                  "id":9,
+                  "parte": "pernas enlameadas",
                   "tipo": [
                     {
                       "id":1,
@@ -4385,75 +5411,17 @@
                         {
                           "id":1,
                           "maneira":"corte",
-                          "valor": 45
+                          "valor": 24
                         },
                         {
                           "id":2,
                           "maneira":"impacto",
-                          "valor": 45
+                          "valor": 24
                         },
                         {
                           "id":3,
                           "maneira":"munição",
-                          "valor": 30
-                        }
-                      ]                  
-                    },
-                    {
-                      "id":2,
-                      "tipo":"elemental",
-                      "eficiencia":[
-                        {
-                          "id":1,
-                          "maneira":"fogo",
                           "valor": 20
-                        },
-                        {
-                          "id":2,
-                          "maneira":"agua",
-                          "valor": 0
-                        },
-                        {
-                          "id":3,
-                          "maneira":"trovão",
-                          "valor": 10 
-                        },
-                        {
-                          "id":4,
-                          "maneira":"gelo",
-                          "valor": 5
-                        },
-                        {
-                          "id":5,
-                          "maneira":"dragão",
-                          "valor": 10
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "id":5,
-                  "parte": "coroa",
-                  "tipo": [
-                    {
-                      "id":1,
-                      "tipo": "fisico",
-                      "eficiencia": [
-                        {
-                          "id":1,
-                          "maneira":"corte",
-                          "valor": 0
-                        },
-                        {
-                          "id":2,
-                          "maneira":"impacto",
-                          "valor": 0
-                        },
-                        {
-                          "id":3,
-                          "maneira":"munição",
-                          "valor": 0
                         }
                       ]                  
                     },
@@ -4469,7 +5437,65 @@
                         {
                           "id":2,
                           "maneira":"agua",
+                          "valor": 80
+                        },
+                        {
+                          "id":3,
+                          "maneira":"trovão",
+                          "valor": 0 
+                        },
+                        {
+                          "id":4,
+                          "maneira":"gelo",
+                          "valor": 15
+                        },
+                        {
+                          "id":5,
+                          "maneira":"dragão",
+                          "valor": 10
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id":10,
+                  "parte": "cauda enlameada",
+                  "tipo": [
+                    {
+                      "id":1,
+                      "tipo": "fisico",
+                      "eficiencia": [
+                        {
+                          "id":1,
+                          "maneira":"corte",
+                          "valor": 25
+                        },
+                        {
+                          "id":2,
+                          "maneira":"impacto",
+                          "valor": 25
+                        },
+                        {
+                          "id":3,
+                          "maneira":"munição",
+                          "valor": 22
+                        }
+                      ]                  
+                    },
+                    {
+                      "id":2,
+                      "tipo":"elemental",
+                      "eficiencia":[
+                        {
+                          "id":1,
+                          "maneira":"fogo",
                           "valor": 0
+                        },
+                        {
+                          "id":2,
+                          "maneira":"agua",
+                          "valor": 80
                         },
                         {
                           "id":3,
@@ -4479,17 +5505,17 @@
                         {
                           "id":4,
                           "maneira":"gelo",
-                          "valor": 0
+                          "valor": 15
                         },
                         {
                           "id":5,
                           "maneira":"dragão",
-                          "valor": 0
+                          "valor": 10
                         }
                       ]
                     }
                   ]
-                }                
+                }                 
               ]
             },
             {
@@ -4498,31 +5524,31 @@
                 {
                   "id":1,
                   "aflicao":"veneno",
-                  "resistencia-inicial":550,
+                  "resistencia-inicial":370,
                   "reducao-natural":"-5 a cada 10 sec",
-                  "duracao": "20 sec",
-                  "dano-total": 320
+                  "duracao": "25 sec",
+                  "dano-total": 500
                 },
                 {
                   "id":2,
                   "aflicao":"paralisia",
-                  "resistencia-inicial":700,
+                  "resistencia-inicial":430,
                   "reducao-natural":"-5 a cada 10 sec",
-                  "duracao": "7 sec",
+                  "duracao": "12 sec",
                   "dano-total": 0
                 },
                 {
                   "id":3,
                   "aflicao":"sono",
-                  "resistencia-inicial":"imune",
-                  "reducao-natural":"nenhum",
-                  "duracao": "nenhum",
+                  "resistencia-inicial":550,
+                  "reducao-natural":"-5 a cada 10 sec",
+                  "duracao": "40 sec",
                   "dano-total": 0
                 },
                 {
                   "id":4,
                   "aflicao":"explosão",
-                  "resistencia-inicial":1920,
+                  "resistencia-inicial":440,
                   "reducao-natural":"nenhum",
                   "duracao": "instantânea",
                   "dano-total": 100
@@ -4530,7 +5556,7 @@
                 {
                   "id":5,
                   "aflicao":"nocaute",
-                  "resistencia-inicial":5000,
+                  "resistencia-inicial":800,
                   "reducao-natural":"-5 a cada 10 sec",
                   "duracao": "7 sec",
                   "dano-total": 0
@@ -4538,7 +5564,7 @@
                 {
                   "id":6,
                   "aflicao":"montaria",
-                  "resistencia-inicial":1200,
+                  "resistencia-inicial":330,
                   "reducao-natural":"nenhum",
                   "duracao": "até derrubar ou ser derrubado",
                   "dano-total": 0
@@ -4549,46 +5575,101 @@
           "recompensas": [
             {
               "id":1,
-              "low-rank":"nenhum"
+              "low-rank":[           
+                {
+                  "id":1, 
+                  "item":"Barroth Shell",
+                  "chance":["31%", "20%", "28%", "37%","28%", "100%"],
+                  "origem":["Corpo do monstro", "Cauda cortada", "Gota brilhante","Plunderblade","Palicoes", "Pegadas"]
+                },
+                {
+                  "id":2, 
+                  "item":"Barroth Ridge",
+                  "chance":["24%", "30%"],
+                  "origem":["Corpo do monstro", "Plunderblade"]
+                },
+                {
+                  "id":3,
+                  "item":"Barroth Claw",
+                  "chance":["18%", "18%"],
+                  "origem":["Corpo do monstro", "Plunderblade"]
+                },
+                {
+                  "id":4,
+                  "item":"Barroth Scalp",
+                  "chance":["15%", "28%", "26%", "28%"],
+                  "origem":["Corpo do monstro","Gota brilhante", "Plunderblade", "Palicoes"]
+                },
+                {
+                  "id":5,
+                  "item":"Barroth Tail",
+                  "cahnce":["12%", "80%", "2%"],
+                  "origem":["Corpo do monstro","Cauda cortada", "Plunderblade"]
+                },
+                {
+                  "id":6,
+                  "item":"Fertile Mud",
+                  "cahnce":["70%", "15%","50%"],
+                  "origem":["Gota brilhante", "Plunderblade", "Palicoes"]
+                },
+                {
+                  "id":7,
+                  "item":"Wyvern Tear",
+                  "cahnce":["22%", "22%"],
+                  "origem":["Gota brilhante", "Palicoes"]
+                }
+              ]
             },
             {
               "id":2, 
               "high-rank":[           
                 {
                   "id":1, 
-                  "item":"Ancient Leshen Claw",
-                  "chance":"40%",
-                  "origem":"Corpo do monstro"
+                  "item":"Barroth Carapace",
+                  "chance":["30%", "20%", "28%", "43%","28%", "100%"],
+                  "origem":["Corpo do monstro", "Cauda cortada", "Gota brilhante","Plunderblade","Palicoes", "Pegadas"]
                 },
                 {
                   "id":2, 
-                  "item":"Ancient Cursed Bone",
-                  "chance":"30%",
-                  "origem":"Corpo do monstro"
+                  "item":"Barroth Ridge+",
+                  "chance":["24%", "32%"],
+                  "origem":["Corpo do monstro", "Plunderblade"]
                 },
                 {
                   "id":3,
-                  "item":"Leshen Resin",
-                  "chance":["25%","93%"],
-                  "origem":["Corpo do monstro","Recompensa por quebrar o corpo, ao final da missão"]
+                  "item":"Barroth Claw+",
+                  "chance":["18%", "23%"],
+                  "origem":["Corpo do monstro", "Plunderblade"]
                 },
                 {
                   "id":4,
-                  "item":"Mutagen",
-                  "chance":["5%", "7%", "7%"],
-                  "origem":["Corpo do monstro","Recompensa por quebrar o corpo, ao final da missão", "Recompensa por quebrar os chifres, ao final da missão"]
+                  "item":"Barroth Scalp",
+                  "chance":["15%", "28%", "26%", "28%"],
+                  "origem":["Corpo do monstro","Gota brilhante", "Plunderblade", "Palicoes"]
                 },
                 {
                   "id":5,
-                  "item":"Ancient Leshen Antlers",
-                  "cahnce":"93%",
-                  "origem":"Recompensa por quebrar os chifres, ao final da missão"
+                  "item":"Barroth Tail",
+                  "cahnce":["11%", "80%", "2%"],
+                  "origem":["Corpo do monstro","Cauda cortada", "Plunderblade"]
                 },
                 {
-                  "id":5,
-                  "item":"Monster Bone L",
-                  "cahnce":"100%",
-                  "origem":"Recompensa por completar a missão"
+                  "id":6,
+                  "item":"Fertile Mud",
+                  "cahnce":["50%", "15%","50%"],
+                  "origem":["Gota brilhante", "Plunderblade", "Palicoes"]
+                },
+                {
+                  "id":7,
+                  "item":"Wyvern Tear",
+                  "cahnce":["22%", "22%"],
+                  "origem":["Gota brilhante", "Palicoes"]
+                },
+                {
+                  "id":8,
+                  "item":"Wyvern Gem",
+                  "cahnce":["2%", "2%"],
+                  "origem":["Corpo do monstro", "Plunderblade"]
                 }
               ]
             }
@@ -4608,13 +5689,885 @@
             },
             {
               "id":4,
-              "parte": "pernas"
+              "parte": "perna esquerda"
+            },
+            {
+              "id": 5,
+              "parte":"perna direita"
+            },
+            {
+              "id":6,
+              "parte":"cauda"
+            },
+            {
+              "id":7,
+              "parte": "crista"
+            },
+            {
+              "id":8,
+              "parte": "cabeça enlameada"
+            },
+            {
+              "id":9,
+              "parte": "corpo enlameado"
+            },
+            {
+              "id":10,
+              "parte": "braços enlameados"
+            },
+            {
+              "id":11,
+              "parte": "perna esquerda enlameada"
+            },
+            {
+              "id": 12,
+              "parte":"perna direita enlameada"
+            },
+            {
+              "id":13,
+              "parte":"cauda enlameada"
             }
     
           ],
-          "icone": "assets/icones/ancient_leshen_icon.png",
-          "img": "assets/imagens/ancient_leshen.jpg"
-        }
+          "icone": "assets/icones/barroth_icon.png",
+          "img": "assets/imagens/barroth.webp"
+        },        
+        {
+          "id": 4,
+          "name":"Bazelgeuse",
+          "type": "grande",
+          "especie": "flying wyvern",
+          "descricao":" Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
+          "elemento": [
+            {
+              "id":1,
+              "elemento":"fogo"
+            }
+          ],
+          "aflicoes": [
+            {
+              "id":1,
+              "aflicao":"fireblight"
+            },
+            {
+              "id":2,
+              "aflicao":"blastblight"
+            }
+          ],
+          "locais":[            
+            {
+              "id":1,
+              "nome":"Ancient Forest"
+            },
+            {
+              "id":2,
+              "nome":"Wildspire Waste"
+            },
+            {
+              "id":3,
+              "nome":"Ancient Forest"
+            }
+          ],
+          "caracteristicas": [
+            {
+              "id":1,
+              "zona-de-dano": [
+                {
+                  "id":1,
+                  "parte": "corpo",
+                  "tipo": [
+                    {
+                      "id":1,
+                      "tipo": "fisico",
+                      "eficiencia": [
+                        {
+                          "id":1,
+                          "maneira":"corte",
+                          "valor": 46
+                        },
+                        {
+                          "id":2,
+                          "maneira":"impacto",
+                          "valor": 46
+                        },
+                        {
+                          "id":3,
+                          "maneira":"munição",
+                          "valor": 50
+                        }
+                      ]                  
+                    },
+                    {
+                      "id":2,
+                      "tipo":"elemental",
+                      "eficiencia":[
+                        {
+                          "id":1,
+                          "maneira":"fogo",
+                          "valor": 20
+                        },
+                        {
+                          "id":2,
+                          "maneira":"agua",
+                          "valor": 0
+                        },
+                        {
+                          "id":3,
+                          "maneira":"trovão",
+                          "valor": 0
+                        },
+                        {
+                          "id":4,
+                          "maneira":"gelo",
+                          "valor": 10
+                        },
+                        {
+                          "id":5,
+                          "maneira":"dragão",
+                          "valor": 5
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id":2,
+                  "parte": "cabeça",
+                  "tipo": [
+                    {
+                      "id":1,
+                      "tipo": "fisico",
+                      "eficiencia": [
+                        {
+                          "id":1,
+                          "maneira":"corte",
+                          "valor": 22
+                        },
+                        {
+                          "id":2,
+                          "maneira":"impacto",
+                          "valor": 25
+                        },
+                        {
+                          "id":3,
+                          "maneira":"munição",
+                          "valor": 10
+                        }
+                      ]                  
+                    },
+                    {
+                      "id":2,
+                      "tipo":"elemental",
+                      "eficiencia":[
+                        {
+                          "id":1,
+                          "maneira":"fogo",
+                          "valor": 20
+                        },
+                        {
+                          "id":2,
+                          "maneira":"agua",
+                          "valor": 0
+                        },
+                        {
+                          "id":3,
+                          "maneira":"trovão",
+                          "valor": 0
+                        },
+                        {
+                          "id":4,
+                          "maneira":"gelo",
+                          "valor": 15
+                        },
+                        {
+                          "id":5,
+                          "maneira":"dragão",
+                          "valor": 10
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id":3,
+                  "parte": "braços",
+                  "tipo": [
+                    {
+                      "id":1,
+                      "tipo": "fisico",
+                      "eficiencia": [
+                        {
+                          "id":1,
+                          "maneira":"corte",
+                          "valor": 80
+                        },
+                        {
+                          "id":2,
+                          "maneira":"impacto",
+                          "valor": 85
+                        },
+                        {
+                          "id":3,
+                          "maneira":"munição",
+                          "valor": 75
+                        }
+                      ]                  
+                    },
+                    {
+                      "id":2,
+                      "tipo":"elemental",
+                      "eficiencia":[
+                        {
+                          "id":1,
+                          "maneira":"fogo",
+                          "valor": 30
+                        },
+                        {
+                          "id":2,
+                          "maneira":"agua",
+                          "valor": 0
+                        },
+                        {
+                          "id":3,
+                          "maneira":"trovão",
+                          "valor": 0 
+                        },
+                        {
+                          "id":4,
+                          "maneira":"gelo",
+                          "valor": 10
+                        },
+                        {
+                          "id":5,
+                          "maneira":"dragão",
+                          "valor": 5
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id":4,
+                  "parte": "pernas",
+                  "tipo": [
+                    {
+                      "id":1,
+                      "tipo": "fisico",
+                      "eficiencia": [
+                        {
+                          "id":1,
+                          "maneira":"corte",
+                          "valor": 40
+                        },
+                        {
+                          "id":2,
+                          "maneira":"impacto",
+                          "valor": 35
+                        },
+                        {
+                          "id":3,
+                          "maneira":"munição",
+                          "valor": 25
+                        }
+                      ]                  
+                    },
+                    {
+                      "id":2,
+                      "tipo":"elemental",
+                      "eficiencia":[
+                        {
+                          "id":1,
+                          "maneira":"fogo",
+                          "valor": 20
+                        },
+                        {
+                          "id":2,
+                          "maneira":"agua",
+                          "valor": 0
+                        },
+                        {
+                          "id":3,
+                          "maneira":"trovão",
+                          "valor": 0 
+                        },
+                        {
+                          "id":4,
+                          "maneira":"gelo",
+                          "valor": 10
+                        },
+                        {
+                          "id":5,
+                          "maneira":"dragão",
+                          "valor": 5
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id":5,
+                  "parte": "cauda",
+                  "tipo": [
+                    {
+                      "id":1,
+                      "tipo": "fisico",
+                      "eficiencia": [
+                        {
+                          "id":1,
+                          "maneira":"corte",
+                          "valor": 55
+                        },
+                        {
+                          "id":2,
+                          "maneira":"impacto",
+                          "valor": 50
+                        },
+                        {
+                          "id":3,
+                          "maneira":"munição",
+                          "valor": 40
+                        }
+                      ]                  
+                    },
+                    {
+                      "id":2,
+                      "tipo":"elemental",
+                      "eficiencia":[
+                        {
+                          "id":1,
+                          "maneira":"fogo",
+                          "valor": 25
+                        },
+                        {
+                          "id":2,
+                          "maneira":"agua",
+                          "valor": 0
+                        },
+                        {
+                          "id":3,
+                          "maneira":"trovão",
+                          "valor": 0
+                        },
+                        {
+                          "id":4,
+                          "maneira":"gelo",
+                          "valor": 15
+                        },
+                        {
+                          "id":5,
+                          "maneira":"dragão",
+                          "valor": 10
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id":6,
+                  "parte": "corpo enlameado",
+                  "tipo": [
+                    {
+                      "id":1,
+                      "tipo": "fisico",
+                      "eficiencia": [
+                        {
+                          "id":1,
+                          "maneira":"corte",
+                          "valor": 24
+                        },
+                        {
+                          "id":2,
+                          "maneira":"impacto",
+                          "valor": 24
+                        },
+                        {
+                          "id":3,
+                          "maneira":"munição",
+                          "valor": 20
+                        }
+                      ]                  
+                    },
+                    {
+                      "id":2,
+                      "tipo":"elemental",
+                      "eficiencia":[
+                        {
+                          "id":1,
+                          "maneira":"fogo",
+                          "valor": 0
+                        },
+                        {
+                          "id":2,
+                          "maneira":"agua",
+                          "valor": 80
+                        },
+                        {
+                          "id":3,
+                          "maneira":"trovão",
+                          "valor": 0
+                        },
+                        {
+                          "id":4,
+                          "maneira":"gelo",
+                          "valor": 15
+                        },
+                        {
+                          "id":5,
+                          "maneira":"dragão",
+                          "valor": 10
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id":7,
+                  "parte": "cabeça enlameada",
+                  "tipo": [
+                    {
+                      "id":1,
+                      "tipo": "fisico",
+                      "eficiencia": [
+                        {
+                          "id":1,
+                          "maneira":"corte",
+                          "valor": 20
+                        },
+                        {
+                          "id":2,
+                          "maneira":"impacto",
+                          "valor": 24
+                        },
+                        {
+                          "id":3,
+                          "maneira":"munição",
+                          "valor": 9
+                        }
+                      ]                  
+                    },
+                    {
+                      "id":2,
+                      "tipo":"elemental",
+                      "eficiencia":[
+                        {
+                          "id":1,
+                          "maneira":"fogo",
+                          "valor": 0
+                        },
+                        {
+                          "id":2,
+                          "maneira":"agua",
+                          "valor": 80
+                        },
+                        {
+                          "id":3,
+                          "maneira":"trovão",
+                          "valor": 0
+                        },
+                        {
+                          "id":4,
+                          "maneira":"gelo",
+                          "valor": 15
+                        },
+                        {
+                          "id":5,
+                          "maneira":"dragão",
+                          "valor": 10
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id":8,
+                  "parte": "braços enlameados",
+                  "tipo": [
+                    {
+                      "id":1,
+                      "tipo": "fisico",
+                      "eficiencia": [
+                        {
+                          "id":1,
+                          "maneira":"corte",
+                          "valor": 35
+                        },
+                        {
+                          "id":2,
+                          "maneira":"impacto",
+                          "valor": 38
+                        },
+                        {
+                          "id":3,
+                          "maneira":"munição",
+                          "valor": 30
+                        }
+                      ]                  
+                    },
+                    {
+                      "id":2,
+                      "tipo":"elemental",
+                      "eficiencia":[
+                        {
+                          "id":1,
+                          "maneira":"fogo",
+                          "valor": 0
+                        },
+                        {
+                          "id":2,
+                          "maneira":"agua",
+                          "valor": 80
+                        },
+                        {
+                          "id":3,
+                          "maneira":"trovão",
+                          "valor": 0 
+                        },
+                        {
+                          "id":4,
+                          "maneira":"gelo",
+                          "valor": 15
+                        },
+                        {
+                          "id":5,
+                          "maneira":"dragão",
+                          "valor": 10
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id":9,
+                  "parte": "pernas enlameadas",
+                  "tipo": [
+                    {
+                      "id":1,
+                      "tipo": "fisico",
+                      "eficiencia": [
+                        {
+                          "id":1,
+                          "maneira":"corte",
+                          "valor": 24
+                        },
+                        {
+                          "id":2,
+                          "maneira":"impacto",
+                          "valor": 24
+                        },
+                        {
+                          "id":3,
+                          "maneira":"munição",
+                          "valor": 20
+                        }
+                      ]                  
+                    },
+                    {
+                      "id":2,
+                      "tipo":"elemental",
+                      "eficiencia":[
+                        {
+                          "id":1,
+                          "maneira":"fogo",
+                          "valor": 0
+                        },
+                        {
+                          "id":2,
+                          "maneira":"agua",
+                          "valor": 80
+                        },
+                        {
+                          "id":3,
+                          "maneira":"trovão",
+                          "valor": 0 
+                        },
+                        {
+                          "id":4,
+                          "maneira":"gelo",
+                          "valor": 15
+                        },
+                        {
+                          "id":5,
+                          "maneira":"dragão",
+                          "valor": 10
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id":10,
+                  "parte": "cauda enlameada",
+                  "tipo": [
+                    {
+                      "id":1,
+                      "tipo": "fisico",
+                      "eficiencia": [
+                        {
+                          "id":1,
+                          "maneira":"corte",
+                          "valor": 25
+                        },
+                        {
+                          "id":2,
+                          "maneira":"impacto",
+                          "valor": 25
+                        },
+                        {
+                          "id":3,
+                          "maneira":"munição",
+                          "valor": 22
+                        }
+                      ]                  
+                    },
+                    {
+                      "id":2,
+                      "tipo":"elemental",
+                      "eficiencia":[
+                        {
+                          "id":1,
+                          "maneira":"fogo",
+                          "valor": 0
+                        },
+                        {
+                          "id":2,
+                          "maneira":"agua",
+                          "valor": 80
+                        },
+                        {
+                          "id":3,
+                          "maneira":"trovão",
+                          "valor": 0
+                        },
+                        {
+                          "id":4,
+                          "maneira":"gelo",
+                          "valor": 15
+                        },
+                        {
+                          "id":5,
+                          "maneira":"dragão",
+                          "valor": 10
+                        }
+                      ]
+                    }
+                  ]
+                }                 
+              ]
+            },
+            {
+              "id":2,
+              "resistencia-aflicoes": [
+                {
+                  "id":1,
+                  "aflicao":"veneno",
+                  "resistencia-inicial":370,
+                  "reducao-natural":"-5 a cada 10 sec",
+                  "duracao": "25 sec",
+                  "dano-total": 500
+                },
+                {
+                  "id":2,
+                  "aflicao":"paralisia",
+                  "resistencia-inicial":430,
+                  "reducao-natural":"-5 a cada 10 sec",
+                  "duracao": "12 sec",
+                  "dano-total": 0
+                },
+                {
+                  "id":3,
+                  "aflicao":"sono",
+                  "resistencia-inicial":550,
+                  "reducao-natural":"-5 a cada 10 sec",
+                  "duracao": "40 sec",
+                  "dano-total": 0
+                },
+                {
+                  "id":4,
+                  "aflicao":"explosão",
+                  "resistencia-inicial":440,
+                  "reducao-natural":"nenhum",
+                  "duracao": "instantânea",
+                  "dano-total": 100
+                },
+                {
+                  "id":5,
+                  "aflicao":"nocaute",
+                  "resistencia-inicial":800,
+                  "reducao-natural":"-5 a cada 10 sec",
+                  "duracao": "7 sec",
+                  "dano-total": 0
+                },
+                {
+                  "id":6,
+                  "aflicao":"montaria",
+                  "resistencia-inicial":330,
+                  "reducao-natural":"nenhum",
+                  "duracao": "até derrubar ou ser derrubado",
+                  "dano-total": 0
+                }
+              ]
+            }
+          ],      
+          "recompensas": [
+            {
+              "id":1,
+              "low-rank":[           
+                {
+                  "id":1, 
+                  "item":"Barroth Shell",
+                  "chance":["31%", "20%", "28%", "37%","28%", "100%"],
+                  "origem":["Corpo do monstro", "Cauda cortada", "Gota brilhante","Plunderblade","Palicoes", "Pegadas"]
+                },
+                {
+                  "id":2, 
+                  "item":"Barroth Ridge",
+                  "chance":["24%", "30%"],
+                  "origem":["Corpo do monstro", "Plunderblade"]
+                },
+                {
+                  "id":3,
+                  "item":"Barroth Claw",
+                  "chance":["18%", "18%"],
+                  "origem":["Corpo do monstro", "Plunderblade"]
+                },
+                {
+                  "id":4,
+                  "item":"Barroth Scalp",
+                  "chance":["15%", "28%", "26%", "28%"],
+                  "origem":["Corpo do monstro","Gota brilhante", "Plunderblade", "Palicoes"]
+                },
+                {
+                  "id":5,
+                  "item":"Barroth Tail",
+                  "cahnce":["12%", "80%", "2%"],
+                  "origem":["Corpo do monstro","Cauda cortada", "Plunderblade"]
+                },
+                {
+                  "id":6,
+                  "item":"Fertile Mud",
+                  "cahnce":["70%", "15%","50%"],
+                  "origem":["Gota brilhante", "Plunderblade", "Palicoes"]
+                },
+                {
+                  "id":7,
+                  "item":"Wyvern Tear",
+                  "cahnce":["22%", "22%"],
+                  "origem":["Gota brilhante", "Palicoes"]
+                }
+              ]
+            },
+            {
+              "id":2, 
+              "high-rank":[           
+                {
+                  "id":1, 
+                  "item":"Barroth Carapace",
+                  "chance":["30%", "20%", "28%", "43%","28%", "100%"],
+                  "origem":["Corpo do monstro", "Cauda cortada", "Gota brilhante","Plunderblade","Palicoes", "Pegadas"]
+                },
+                {
+                  "id":2, 
+                  "item":"Barroth Ridge+",
+                  "chance":["24%", "32%"],
+                  "origem":["Corpo do monstro", "Plunderblade"]
+                },
+                {
+                  "id":3,
+                  "item":"Barroth Claw+",
+                  "chance":["18%", "23%"],
+                  "origem":["Corpo do monstro", "Plunderblade"]
+                },
+                {
+                  "id":4,
+                  "item":"Barroth Scalp",
+                  "chance":["15%", "28%", "26%", "28%"],
+                  "origem":["Corpo do monstro","Gota brilhante", "Plunderblade", "Palicoes"]
+                },
+                {
+                  "id":5,
+                  "item":"Barroth Tail",
+                  "cahnce":["11%", "80%", "2%"],
+                  "origem":["Corpo do monstro","Cauda cortada", "Plunderblade"]
+                },
+                {
+                  "id":6,
+                  "item":"Fertile Mud",
+                  "cahnce":["50%", "15%","50%"],
+                  "origem":["Gota brilhante", "Plunderblade", "Palicoes"]
+                },
+                {
+                  "id":7,
+                  "item":"Wyvern Tear",
+                  "cahnce":["22%", "22%"],
+                  "origem":["Gota brilhante", "Palicoes"]
+                },
+                {
+                  "id":8,
+                  "item":"Wyvern Gem",
+                  "cahnce":["2%", "2%"],
+                  "origem":["Corpo do monstro", "Plunderblade"]
+                }
+              ]
+            }
+          ],
+          "partes-quebraveis": [
+            {
+              "id":1,
+              "parte": "cabeça"
+            },
+            {
+              "id":2,
+              "parte": "corpo"
+            },
+            {
+              "id":3,
+              "parte": "braços"
+            },
+            {
+              "id":4,
+              "parte": "perna esquerda"
+            },
+            {
+              "id": 5,
+              "parte":"perna direita"
+            },
+            {
+              "id":6,
+              "parte":"cauda"
+            },
+            {
+              "id":7,
+              "parte": "crista"
+            },
+            {
+              "id":8,
+              "parte": "cabeça enlameada"
+            },
+            {
+              "id":9,
+              "parte": "corpo enlameado"
+            },
+            {
+              "id":10,
+              "parte": "braços enlameados"
+            },
+            {
+              "id":11,
+              "parte": "perna esquerda enlameada"
+            },
+            {
+              "id": 12,
+              "parte":"perna direita enlameada"
+            },
+            {
+              "id":13,
+              "parte":"cauda enlameada"
+            }
+    
+          ],
+          "icone": "assets/icones/barroth_icon.png",
+          "img": "assets/imagens/barroth.jpg"
+        },
       ]
     }     
   ]  
