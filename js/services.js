@@ -1,12 +1,11 @@
-import { handleErrors } from "./exception.js";
+import { handleErrors, MonsterNaoEncontradoException } from "./exception.js";
 import jsonData from './monster.json';
 
-fetch('https://mhw-db.com/monsters')
-then(response => response.json())
+var URL = 'http://localhost:3000/monstros'
 
 export const getAllMonsters = async () => {
     try{
-        const response = await fetch('https://mhw-db.com/monsters');
+        const response = await fetch(URL);
         handleErrors(response);
         return await response.json();
     }

@@ -1,5 +1,15 @@
-main{
-    background-image: url('./assets/fundo/papel.jpg');
+footer{
+    background-image: url("../assets/fundo/fundo_palico.png");
+    background-repeat: round;
+}
+
+header{background-image: url('../assets/fundo/fundo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body{
+    background-image: url("../assets/fundo/papel.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -7,10 +17,34 @@ main{
     font-weight: 600;
 }
 
-.img{width: 
-    height;
-
+footer{
+    background-color: #911F20;
+    background-image: url("../assets/fundo/fundo_palico_II.png");
+    background-repeat: round;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: .25rem;    
 }
-.p{width: ;
 
+footer > div{    
+    text-align: center;
+    color: black;
+    font-weight: 700;    
 }
+
+.linkfooter {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+
+
+/*.img{width: ;
+    height:
+}
+
+.p{width: 
+}
+*/

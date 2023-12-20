@@ -5,3 +5,10 @@
     }
     return response;
 };
+
+export class MonsterNaoEncontradoException extends Error {
+    constructor(mensagem) {
+        super (mensagem);
+        this.nome = 'MonsterNaoEncontradoException';
+    }
+}
