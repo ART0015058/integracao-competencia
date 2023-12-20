@@ -19,7 +19,7 @@ body{
 
 footer{
     background-color: #911F20;
-    background-image: url("../assets/fundo/fundo_palico_II.png");
+    background-image: url("../assets/fundo/fundo_palico.png");
     background-repeat: round;
     position: fixed;
     bottom: 0;
@@ -29,14 +29,16 @@ footer{
 
 footer > div{    
     text-align: center;
-    color: black;
-    font-weight: 700;    
+    color: rgb(0, 160, 160);
+    font-weight: 500;
+    text-shadow: .5px .5px 1px rgba(255, 255, 255, 0.8)  
 }
 
 .linkfooter {
     text-decoration: none;
-    color: black;
-    font-weight: 700;
+    color: rgb(0, 160, 160);
+    font-weight: 500;
+    text-shadow: .5px .5px 1px rgba(255, 255, 255, 0.8)
 }
 
 
