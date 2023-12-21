@@ -1,23 +1,29 @@
-import {getAllMonsters, filtrarMonstrosGrandes, filtrarMonstrosPequenos}from "./services.js"
+import {getAllMonsters, filtrarMonstrosPequenos}from "./services.js"
 
-window.onload = () =>{
-    loadAllSmallMonsters(),
-    loadAllLargeMonsters()
-    loadAllMonsters()
-};
+window.onload = () => {
+    loadAllSmallMonsters();
+}
 
-const loadAllSmallMonsters =()=>{
-    const monstrosPequenos = document.getElementById("monstrosPequenos");
-    filtrarMonstrosPequenos().then((resp) =>{
-        resp.forEach(monstro => {
+const loadAllSmallMonsters = () => {
+    const monstrosPequenosContainer = document.getElementById("monstrosPequenos");
+
+    getAllMonsters().then((resp) => {
+        const monstrosPequenos = filtrarMonstrosPequenos(resp);
+        
+        monstrosPequenos.forEach(monstro => {
             const monstrosPequenosDiv = document.createElement('div');
-            monstrosPequenosDiv.innerHTML = ``;
-            monstrosPequenos.appendChild()
+            monstrosPequenosDiv.innerHTML = `
+                <div onclick="procurarMonstroNome()">
+                    <img src="${monstro.icone}" alt="${monstro.nome}">
+                    <h4>${monstro.nome}</h4>
+                </div>
+            `;
+            monstrosPequenosContainer.appendChild(monstrosPequenosDiv);
         });
     });
 };
 
-const loadAllLargeMonsters =()=>{
+/*const loadAllLargeMonsters =()=>{
     const monstrosGrandes = document.getElementById("monstrosGrandes");
     filtrarMonstrosGrandes().then((resp) =>{
         resp.forEach(monstro => {
@@ -34,4 +40,4 @@ const loadAllMonsters = () => {
         resp.forEach(monstro)
     })
 
-}
+}*/

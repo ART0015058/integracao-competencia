@@ -1,38 +1,59 @@
-import { handleErrors, MonsterNaoEncontradoException } from "./exception.js";
-import jsonData from './monster.json';
+import { handleErrors, MonsterNaoEncontradoException } from "./exceptions.js";
 
-var URL = 'http://localhost:3000/monstros'
+var URL = 'http://localhost:3000/monstros';
 
 export const getAllMonsters = async () => {
-    try{
-        const response = await fetch(URL);
-        handleErrors(response);
-        return await response.json();
-    }
-    catch (erro){
-        console.log('Error >>>', error);
-    }
-}
-
-export const filtrarMonstrosPequenos = () => {
-  return jsonData.monstros.filter(monstro => monstro.type === "pequeno");
-}
-export const filtrarMonstrosGrandes = () => {
-  return jsonData.monstros.filter(monstro => monstro.type === "grande");
+  return fetch(URL)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      return response.json();
+    })
+    .catch(error => {
+      console.error(`Erro durante a solicitação: ${error.message}`);
+      throw error; 
+    });
+};
+      
+export const filtrarMonstrosPequenos = async () => {
+  try{
+    const response = fetch(URL);
+    handleErrors(response);
+    return await response.json();
+  }
+  catch (error){
+    console.log('Error >>>', error)
+  }
+} 
+  
+/*export const filtrarMonstrosPequenos = (monstrosData) => {
+  const monstrosPequenos = [];
+  monstrosData.monstros.forEach(grupoMonstros => {
+    grupoMonstros.monstrosforEach(monstro => {
+      if (monstro.type === "pequeno") {
+        monstrosPequenos.push(monstro);
+      }
+    });
+  });
+}*/
+ 
+/*export const filtrarMonstrosGrandes = () => {
+  return monstros.filter(monstro => monstro.type === "grande");
 }
 
 export const filtrarMonstrosPequenosAncient = () => {
   return jsonData.montros.filter(monstro => monstro.local === "Ancient Forest")
 }
-export const filtrarMonstrosPequenosWilspire = () => {
+export const filtrarMonstrosPequenosWildspire = () => {
   return jsonData.montros.filter(monstro => monstro.local === "Wildspire Waste")
 }
-export const filtrarMonstrosPequenosWilspire = () => {
-  return jsonData.montros.filter(monstro => monstro.local === "Wildspire Waste")
-}
+export const filtrarMonstrosPequenosCoral = () => {
+  return jsonData.montros.filter(monstro => monstro.local === "Coral Highlands")
+}*/
 
 
-export const adicionarMonstroGrande = async (id, nome) => {
+/*export const adicionarMonstroGrande = async (id, nome) => {
     const novoMonstroGrande = {
         "tipo": "grande",
         "monstros":[
@@ -486,4 +507,4 @@ then(response => response.json())
       data.forEach(monster => {
         console.log(monster.name);
       });
-    })
+    })*/
