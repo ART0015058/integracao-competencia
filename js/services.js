@@ -2,7 +2,16 @@ import { handleErrors, MonsterNaoEncontradoException } from "./exceptions.js";
 
 var URL = 'http://localhost:3000/monstros';
 
-export const getAllMonsters = async () => {
+export const getAllMonsters= async() =>{
+  try { const response = fetch(URL);
+    handleErrors(response);
+    return await response.json();    
+  } catch (error) {
+    console.log('Error >>>', error);    
+  }
+}
+
+/*export const getAllMonsters = async () => {
   return fetch(URL)
     .then(response => {
       if (!response.ok) {
@@ -16,16 +25,16 @@ export const getAllMonsters = async () => {
     });
 };
       
-export const filtrarMonstrosPequenos = async () => {
+export const filtrarMonstrosPequenos = () => {
   try{
     const response = fetch(URL);
     handleErrors(response);
-    return await response.json();
+    return response.json();
   }
   catch (error){
     console.log('Error >>>', error)
   }
-} 
+} */
   
 /*export const filtrarMonstrosPequenos = (monstrosData) => {
   const monstrosPequenos = [];
