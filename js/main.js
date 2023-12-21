@@ -64,6 +64,17 @@ const carregarGrandes = async () => {
     }
 };
 
+const
+
+const getMonsterByName = async () =>{
+    const dataContainer = document.getElementById("resultado-busca");
+    try {
+        
+    } catch (error) {
+        
+    }
+}
+
 
 /*const loadAllLargeMonsters =()=>{
     const monstrosGrandes = document.getElementById("monstrosGrandes");
