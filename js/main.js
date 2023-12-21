@@ -1,6 +1,7 @@
-import {getAllMonsters}from "./services.js"
+import {getAllMonsters, getAllSmallMonsters, getAllLargeMonsters}from "./services.js"
 
 window.onload = () => {
+    carregarPequenos();
     carregarMonstros();
 }
 
@@ -12,6 +13,46 @@ const carregarMonstros = async () => {
                 const monstrosElement,innerHTML = `
                 <div>
                     <p>${monstro.nome}</p>
+                </div>
+                `;
+                dataContainer.appendChild(monstrosElement);
+            });
+        });
+        
+    } catch (error) {
+        console.log('Error >>>', error);
+    }
+};
+
+const carregarPequenos = async () => {
+    const dataContainer = document.getElementById("monstrosPequenos");
+    try {
+        getAllSmallMonsters().then(resp => {
+            resp.forEach((monstro) => {
+                const monstrosElement,innerHTML = `
+                <div>
+                    <img class="icones" src="${monstro.icnoe}" alt="${monstro.nome}">
+                    <p class= "monstro-nome">${monstro.nome}</p>
+                </div>
+                `;
+                dataContainer.appendChild(monstrosElement);
+            });
+        });
+        
+    } catch (error) {
+        console.log('Error >>>', error);
+    }
+};
+
+const carregarGrandes = async () => {
+    const dataContainer = document.getElementById("monstrosGrandes");
+    try {
+        getAllLargeMonsters().then(resp => {
+            resp.forEach((monstro) => {
+                const monstrosElement,innerHTML = `
+                <div>
+                    <img class="icones" src="${monstro.icnoe}" alt="${monstro.nome}">
+                    <p class= "monstro-nome">${monstro.nome}</p>
                 </div>
                 `;
                 dataContainer.appendChild(monstrosElement);

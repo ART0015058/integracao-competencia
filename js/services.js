@@ -10,17 +10,33 @@ export const getAllMonsters= async() =>{
   } catch (error) {
     console.log('Error >>>', error);    
   }
-}
+};
 
-export const getAllSmallMonsters = async () =>{
-  try {
+export const getAllSmallMonsters = () => {
+  try{
     const response = await fetch(URL);
-    then
-    
-  } catch (error) {
-    
-  }
-}
+    MonsterNaoEncontradoException(response);
+    return response.json();
+    //Aplicar filtro de type - buscando "pequeno"
+    const monstrosPequenos = monstros.filter(monstro => monstro.type === "pequeno");
+    console.log(monstrosPequenos);
+  } catch(error) {
+    console.log('Error >>>', error );
+  }  
+};
+
+export const getAllLargeMonsters = () => {
+  try{
+    const response = await fetch(URL);
+    MonsterNaoEncontradoException(response);
+    return response.json();
+    //Aplicar filtro de type - buscando "pequeno"
+    const monstrosGrandes = monstros.filter(monstro => monstro.type === "grande");
+    console.log(monstrosGrandes);
+  } catch(error) {
+    console.log('Error >>>', error );
+  }  
+};
 
 /*export const getAllMonsters = async () => {
   return fetch(URL)
