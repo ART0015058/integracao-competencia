@@ -15,10 +15,20 @@ export const getAllMonsters = async () => {
 }
 
 export const filtrarMonstrosPequenos = () => {
-  return jsonData.monstros.filter(monstro => monstro.tipo === "pequeno");
+  return jsonData.monstros.filter(monstro => monstro.type === "pequeno");
 }
 export const filtrarMonstrosGrandes = () => {
-  return jsonData.monstros.filter(monstro => monstro.tipo === "grande");
+  return jsonData.monstros.filter(monstro => monstro.type === "grande");
+}
+
+export const filtrarMonstrosPequenosAncient = () => {
+  return jsonData.montros.filter(monstro => monstro.local === "Ancient Forest")
+}
+export const filtrarMonstrosPequenosWilspire = () => {
+  return jsonData.montros.filter(monstro => monstro.local === "Wildspire Waste")
+}
+export const filtrarMonstrosPequenosWilspire = () => {
+  return jsonData.montros.filter(monstro => monstro.local === "Wildspire Waste")
 }
 
 

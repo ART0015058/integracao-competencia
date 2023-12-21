@@ -3,6 +3,7 @@ import {getAllMonsters, filtrarMonstrosGrandes, filtrarMonstrosPequenos}from "./
 window.onload = () =>{
     loadAllSmallMonsters(),
     loadAllLargeMonsters()
+    loadAllMonsters()
 };
 
 const loadAllSmallMonsters =()=>{
@@ -27,3 +28,10 @@ const loadAllLargeMonsters =()=>{
     });
 };
 
+const loadAllMonsters = () => {
+    const monstros = document.getElementById("monstros");
+    getAllMonsters().then((resp) => {
+        resp.forEach(monstro)
+    })
+
+}
