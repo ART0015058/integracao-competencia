@@ -12,6 +12,16 @@ export const getAllMonsters= async() =>{
   }
 }
 
+export const getAllSmallMonsters = async () =>{
+  try {
+    const response = await fetch(URL);
+    then
+    
+  } catch (error) {
+    
+  }
+}
+
 /*export const getAllMonsters = async () => {
   return fetch(URL)
     .then(response => {
