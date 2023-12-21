@@ -3,9 +3,10 @@ import { handleErrors, MonsterNaoEncontradoException } from "./exceptions.js";
 var URL = 'http://localhost:3000/monstros';
 
 export const getAllMonsters= async() =>{
-  try { const response = fetch(URL);
+  try { 
+    const response = await fetch(URL);
     handleErrors(response);
-    return await response.json();    
+    return response.json();    
   } catch (error) {
     console.log('Error >>>', error);    
   }

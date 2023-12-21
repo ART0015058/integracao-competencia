@@ -1,8 +1,5 @@
 import {getAllMonsters}from "./services.js"
 
-var URL = 'http://localhost:3000/monstros';
-
-
 window.onload = () => {
     carregarMonstros();
 }
@@ -10,16 +7,17 @@ window.onload = () => {
 const carregarMonstros = async () => {
     const dataContainer = document.getElementById("monstros");
     try {
-        const resp = getAllMonsters();
-        resp.forEach((monstro) => {
-            const monstrosElement = document.createElement("div");
-            monstrosElement.innerHTML = `
-                <div>            
+        getAllMonsters().then(resp => {
+            resp.forEach((monstro) => {
+                const monstrosElement,innerHTML = `
+                <div>
                     <p>${monstro.nome}</p>
                 </div>
-            `;
-            dataContainer.appendChild(monstrosElement);
+                `;
+                dataContainer.appendChild(monstrosElement);
+            });
         });
+        
     } catch (error) {
         console.log('Error >>>', error);
     }
