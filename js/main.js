@@ -1,9 +1,12 @@
 import {getAllMonsters }from "./services.js"
 
 window.onload = () => {
+    carregarPequenos();
+    carregarGrande();
     carregarMonstros();
 }
 
+//Carrega todos os monstro mas gera apenas os nomes
 const carregarMonstros = async () => {
     const dataContainer = document.getElementById("todos-monstros");
     try {
@@ -17,6 +20,85 @@ const carregarMonstros = async () => {
                 `;
                 dataContainer.appendChild(monstroElement);
             });
+        });
+        
+    } catch (error) {
+        console.log('Error >>>', error);
+    }
+};
+
+//carrega todos os monstros e filtra pelo type retornando apenas os pequenos
+const carregarPequenos = async () => {
+    const dataContainerB = documento.getElementById("monstrosPequenos");
+    try {
+        getAllMonsters().then(resp =>{
+            const monstrosPequenos = resp.filter(monstro => monstro.type === "pequeno");
+            monstrosPequenos.forEach((monstro) => {
+                const monstroElementB = document.createElement("div")
+                monstroElementB.innerHTML = `
+                    <div class="card">
+                        <img class="card-img-top" src="${monstro.icone}" alt="${monstro.name}">
+                        <div class="card-body">
+                             <h5 class="car-title">${monstro.name}</h5>
+                        </div>
+                    </div>
+                `;
+                dataContainerB.appendChild(monstroElementB);
+            }); 
+        });
+        
+    } catch (error) {
+        console.log("Error >>>", error);
+    }
+};
+
+//carrega todos os monstros e filtra pelo type retornando apenas os grandes
+const carregarGrande = async () => {
+    const dataContainerC = documento.getElementById("monstrosGrandes");
+    try {
+        getAllMonsters().then(resp =>{
+            const monstrosGrandes = resp.filter(monstro => monstro.type === "grande");
+            monstrosGrandes.forEach((monstro) => {
+                const monstroElementC = document.createElement("div")
+                monstroElementC.innerHTML = `
+                    <div class="card">
+                        <img class="card-img-top" src="${monstro.icone}" alt="${monstro.name}">
+                        <div class="card-body">
+                             <h5 class="car-title">${monstro.name}</h5>
+                        </div>
+                    </div>
+                `;
+                dataContainerC.appendChild(monstroElementC);
+            }); 
+        });
+        
+    } catch (error) {
+        console.log("Error >>>", error);
+    }
+};
+
+//Recebe os dados de pesquisa e retorna o monstro pedido
+const pesquisarMonstros = async () => {
+    const dataContainer = document.getElementById("resultado-busca");
+    const resultadoBusca = document.getElementById("resultado-busca")
+    try {
+        getAllMonsters().then(resp => {
+            resultadoBusca.addEventListener("input", () => {
+                const termoBuscado = res.value.toLowerCase();
+
+                const monstroBuscado = resp.filter(monstro => {
+                    const nomeCaixaBaixa = monstro.name.toLowerCase();
+                    return nomeCaixaBaixa.includes(termoPesquisa)                    
+                });
+                monstroBuscado.forEach((monstro) => {
+                    const monstroElementD = document.createElement("div");
+                    monstroElementD.innerHTML = 
+                    `
+                    //criar estrutura do monstro
+                    `;
+                    dataContainer.appendChild(monstroElementD);
+                });
+            });            
         });
         
     } catch (error) {
