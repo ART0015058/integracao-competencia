@@ -1,4 +1,4 @@
-import { handleErrors, MonsterNaoEncontradoException } from "./exceptions.js";
+import { handleErrors } from "./exceptions.js";
 
 var URL = 'http://localhost:3000/monstros';
 
@@ -12,20 +12,20 @@ export const getAllMonsters= async() =>{
   }
 };
 
-export const getAllSmallMonsters = () => {
+/*export const getAllSmallMonsters = async () => {
   try{
     const response = await fetch(URL);
     MonsterNaoEncontradoException(response);
     return response.json();
     //Aplicar filtro de type - buscando "pequeno"
-    const monstrosPequenos = monstros.filter(monstro => monstro.type === "pequeno");
-    console.log(monstrosPequenos);
+    //const monstrosPequenos = monstros.filter(monstro => monstro.type === "pequeno");
+    //console.log(monstrosPequenos);
   } catch(error) {
     console.log('Error >>>', error );
   }  
-};
+};*/
 
-export const getAllLargeMonsters = () => {
+/*export const getAllLargeMonsters = () => {
   try{
     const response = await fetch(URL);
     MonsterNaoEncontradoException(response);
@@ -36,7 +36,7 @@ export const getAllLargeMonsters = () => {
   } catch(error) {
     console.log('Error >>>', error );
   }  
-};
+};*/
 
 /*export const getAllMonsters = async () => {
   return fetch(URL)

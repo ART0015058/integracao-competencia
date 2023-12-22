@@ -1,21 +1,21 @@
-import {getAllMonsters, getAllSmallMonsters, getAllLargeMonsters}from "./services.js"
+import {getAllMonsters }from "./services.js"
 
 window.onload = () => {
-    carregarPequenos();
     carregarMonstros();
 }
 
 const carregarMonstros = async () => {
-    const dataContainer = document.getElementById("monstros");
+    const dataContainer = document.getElementById("todos-monstros");
     try {
         getAllMonsters().then(resp => {
             resp.forEach((monstro) => {
-                const monstrosElement,innerHTML = `
+                const monstroElement = document.createElement("div") 
+                monstroElement.innerHTML = `
                 <div>
                     <p>${monstro.nome}</p>
                 </div>
                 `;
-                dataContainer.appendChild(monstrosElement);
+                dataContainer.appendChild(monstroElement);
             });
         });
         
@@ -24,27 +24,28 @@ const carregarMonstros = async () => {
     }
 };
 
-const carregarPequenos = async () => {
+/*const carregarPequenos = async () => {
     const dataContainer = document.getElementById("monstrosPequenos");
     try {
-        getAllSmallMonsters().then(resp => {
+        getAllMonsters().then(resp => {
             resp.forEach((monstro) => {
-                const monstrosElement,innerHTML = `
+                const monstrosPequenoElement = document.createElement('div')
+                monstrosPequenoElement.innerHTML = `
                 <div>
                     <img class="icones" src="${monstro.icnoe}" alt="${monstro.nome}">
                     <p class= "monstro-nome">${monstro.nome}</p>
                 </div>
                 `;
-                dataContainer.appendChild(monstrosElement);
+                dataContainer.appendChild(monstrosPequenoElement);
             });
         });
         
     } catch (error) {
         console.log('Error >>>', error);
     }
-};
+};*/
 
-const carregarGrandes = async () => {
+/*const carregarGrandes = async () => {
     const dataContainer = document.getElementById("monstrosGrandes");
     try {
         getAllLargeMonsters().then(resp => {
@@ -73,7 +74,7 @@ const getMonsterByName = async () =>{
     } catch (error) {
         
     }
-}
+}*/
 
 
 /*const loadAllLargeMonsters =()=>{
