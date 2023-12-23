@@ -61,10 +61,10 @@ const carregarGrande = async () => {
             monstrosGrandes.forEach((monstro) => {
                 const monstroElementC = document.createElement("div")
                 monstroElementC.innerHTML = `
-                    <div class="card">
-                        <img class="card-img-top" src="${monstro.icone}" alt="${monstro.name}">
-                        <div class="card-body">
-                             <h5 class="car-title">${monstro.name}</h5>
+                    <div class="cartao">
+                        <img class="cartao-img" src="${monstro.icone}" alt="${monstro.name}">
+                        <div class="cartao-conteudo">
+                             <h5 class="cartao-nome">${monstro.name}</h5>
                         </div>
                     </div>
                 `;

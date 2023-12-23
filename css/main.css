@@ -1,12 +1,21 @@
-header{background-image: url('../assets/fundo/fundo.png');
+@font-face{
+    font-family: 'Monster Hunter';
+    src: url('../fonts/Monsterhunter.woff') format('woff'),
+         url('../fonts/Monsterhuntertype2.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header{
+    background-image: url('../assets/fundo/fundo.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 body{
-    background-image: url("../assets/fundo/papel.jpg");
+    background-image: url("../assets/fundo/grunge-paper-background.jpg");
     background-repeat: round;
-    background-size: auto;
+    background-size: cover;
 }
 
 main{
@@ -47,8 +56,8 @@ footer > div{
 }
 
 .navbar-brand {
-    width: 50%; 
-    height: 50%
+    width: 25%; 
+    height: 25%
 }
 
 .navbar-toggler {
@@ -73,18 +82,66 @@ footer > div{
     text-shadow: .5px .5px 1px rgba(255, 255, 255, 0.8)
 }
 
+.monstro-folha{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+}
+
 .cartao{
-    background-image: url("./assets/fundo/papel.jpg");
+    background-image: url("../assets/fundo/grunge-paper-background.png");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 25%;
+    align-items: center;
+    width: 138px;
+    height: 175px;
     padding: .5rem;
-    margin: .5rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    padding-left: .8rem;
+    padding-right: 1rem;
 }
 
 .cartao-img{ 
-    width:90%    
+    width: 120px;
+    height: 120px;   
 }
-/*.cartao-conteudo
 
-.cartao-nome*/
+.todos-monstros{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+}
+/*.cartao-conteudo*/
+
+h1{
+    text-align: center;
+    font-family: 'Monster Hunter', sans-serif;
+    color: #460101;  
+}
+
+h2{
+    text-align: center;
+    font-family: 'Monster Hunter', sans-serif;
+    color: #460101;  
+}
+
+.cartao-nome{
+    text-align: center;
+    font-family: 'Monster Hunter', sans-serif;
+    justify-content: center;
+    color: #460101;
+    font-size: 18px;  
+
+}

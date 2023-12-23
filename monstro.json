@@ -204,7 +204,7 @@
           ]
         }
       ],
-      "icone": "assets/icones/apceros.webp",
+      "icone": "assets/icones/apceros_icon.png",
       "img": "assets/imagens/apceros.jpg"
     },
     {
@@ -2470,8 +2470,8 @@
           ]
         }
       ],
-      "icone": "assets/icones/",
-      "img": "assets/imagens/"
+      "icone": "assets/icones/kestodon_icon.png",
+      "img": "assets/imagens/kestodon.jpg"
     },
     {
       "id": 13,
