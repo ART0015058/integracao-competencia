@@ -8005,7 +8005,7 @@
     },
     {
       "id": 25,
-      "name": "Barroth",
+      "name": "Diablos",
       "type": "grande",
       "especie": "brute wyvern",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
@@ -8846,12 +8846,12 @@
           "parte": "cauda enlameada"
         }
       ],
-      "icone": "assets/icones/barroth_icon.png",
-      "img": "assets/imagens/barroth.webp"
+      "icone": "assets/icones/diablos_icon.png",
+      "img": "assets/imagens/Diablos.webp"
     },
     {
       "id": 26,
-      "name": "Barroth",
+      "name": "Black Diablos",
       "type": "grande",
       "especie": "brute wyvern",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
@@ -9692,12 +9692,12 @@
           "parte": "cauda enlameada"
         }
       ],
-      "icone": "assets/icones/barroth_icon.png",
-      "img": "assets/imagens/barroth.webp"
+      "icone": "assets/icones/black_diablos_icon.png",
+      "img": "assets/imagens/black diablos.webp"
     },
     {
       "id": 27,
-      "name": "Barroth",
+      "name": "Dodogama",
       "type": "grande",
       "especie": "brute wyvern",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
@@ -10538,12 +10538,12 @@
           "parte": "cauda enlameada"
         }
       ],
-      "icone": "assets/icones/barroth_icon.png",
-      "img": "assets/imagens/barroth.webp"
+      "icone": "assets/icones/dodogama_icon.png",
+      "img": "assets/imagens/dodogama.webp"
     },
     {
       "id": 28,
-      "name": "Barroth",
+      "name": "Great Girros",
       "type": "grande",
       "especie": "brute wyvern",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
@@ -11384,14 +11384,14 @@
           "parte": "cauda enlameada"
         }
       ],
-      "icone": "assets/icones/barroth_icon.png",
-      "img": "assets/imagens/barroth.webp"
+      "icone": "assets/icones/great_girros_icon.png",
+      "img": "assets/imagens/great_girros.webp"
     },
     {
       "id": 29,
-      "name": "Barroth",
+      "name": "Great Jagras",
       "type": "grande",
-      "especie": "brute wyvern",
+      "especie": "fanged wyvern",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
       "elemento": "nenhum",
       "aflicoes": [
@@ -12230,14 +12230,14 @@
           "parte": "cauda enlameada"
         }
       ],
-      "icone": "assets/icones/barroth_icon.png",
-      "img": "assets/imagens/barroth.webp"
+      "icone": "assets/icones/great_jagras_icon.png",
+      "img": "assets/imagens/great_jagras.webp"
     },
     {
       "id": 30,
-      "name": "Barroth",
+      "name": "Jyuratodos",
       "type": "grande",
-      "especie": "brute wyvern",
+      "especie": "piscine wyvern",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
       "elemento": "nenhum",
       "aflicoes": [
@@ -13076,14 +13076,14 @@
           "parte": "cauda enlameada"
         }
       ],
-      "icone": "assets/icones/barroth_icon.png",
-      "img": "assets/imagens/barroth.webp"
+      "icone": "assets/icones/jyuratodos_icon.png",
+      "img": "assets/imagens/jyuratodos.webp"
     },
     {
       "id": 31,
-      "name": "Barroth",
+      "name": "Kirin",
       "type": "grande",
-      "especie": "brute wyvern",
+      "especie": "elder dragon",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
       "elemento": "nenhum",
       "aflicoes": [
@@ -13922,14 +13922,14 @@
           "parte": "cauda enlameada"
         }
       ],
-      "icone": "assets/icones/barroth_icon.png",
-      "img": "assets/imagens/barroth.webp"
+      "icone": "assets/icones/kirin_icon.png",
+      "img": "assets/imagens/kirin.webp"
     },
     {
       "id": 32,
-      "name": "Barroth",
+      "name": "Kulu-Ya-Ku",
       "type": "grande",
-      "especie": "brute wyvern",
+      "especie": "bird wyvern",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
       "elemento": "nenhum",
       "aflicoes": [
@@ -14768,8 +14768,8 @@
           "parte": "cauda enlameada"
         }
       ],
-      "icone": "assets/icones/barroth_icon.png",
-      "img": "assets/imagens/barroth.webp"
+      "icone": "assets/icones/kulu_ya_ku_icon.png",
+      "img": "assets/imagens/kulu_ya_ku.webp"
     },
     {
       "id": 33,
@@ -15616,12 +15616,12 @@
       ],
       "icone": "assets/icones/barroth_icon.png",
       "img": "assets/imagens/barroth.webp"
-    },
+    },    
     {
       "id": 34,
-      "name": "Barroth",
+      "name": "Kushala Daora",
       "type": "grande",
-      "especie": "brute wyvern",
+      "especie": "elder dragon",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
       "elemento": "nenhum",
       "aflicoes": [
@@ -16460,14 +16460,14 @@
           "parte": "cauda enlameada"
         }
       ],
-      "icone": "assets/icones/barroth_icon.png",
-      "img": "assets/imagens/barroth.webp"
-    },
+      "icone": "assets/icones/kushala_daora_icon.png",
+      "img": "assets/imagens/kushala_daora.webp"
+    },    
     {
       "id": 35,
-      "name": "Barroth",
+      "name": "Lavasioth",
       "type": "grande",
-      "especie": "brute wyvern",
+      "especie": "piscine wyvern",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
       "elemento": "nenhum",
       "aflicoes": [
@@ -17306,14 +17306,14 @@
           "parte": "cauda enlameada"
         }
       ],
-      "icone": "assets/icones/barroth_icon.png",
-      "img": "assets/imagens/barroth.webp"
+      "icone": "assets/icones/lavasioth_icon.png",
+      "img": "assets/imagens/lavasioth.webp"
     },
     {
       "id": 36,
-      "name": "Barroth",
+      "name": "Legiana",
       "type": "grande",
-      "especie": "brute wyvern",
+      "especie": "flying wyvern",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
       "elemento": "nenhum",
       "aflicoes": [
@@ -18152,14 +18152,14 @@
           "parte": "cauda enlameada"
         }
       ],
-      "icone": "assets/icones/barroth_icon.png",
-      "img": "assets/imagens/barroth.webp"
+      "icone": "assets/icones/legiana_icon.png",
+      "img": "assets/imagens/legiana.webp"
     },
     {
       "id": 37,
-      "name": "Behemoth",
+      "name": "Leshen",
       "type": "grande",
-      "especie": "brute wyvern",
+      "especie": "relict",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
       "elemento": "nenhum",
       "aflicoes": [
@@ -18998,14 +18998,14 @@
           "parte": "cauda enlameada"
         }
       ],
-      "icone": "assets/icones/behemoth_icon.png",
-      "img": "assets/imagens/behemoth.webp"
+      "icone": "assets/icones/leshen_icon.png",
+      "img": "assets/imagens/leshen.webp"
     },
     {
       "id": 38,
-      "name": "Barroth",
+      "name": "Lunastra",
       "type": "grande",
-      "especie": "brute wyvern",
+      "especie": "elder dragon",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
       "elemento": "nenhum",
       "aflicoes": [
@@ -19844,14 +19844,14 @@
           "parte": "cauda enlameada"
         }
       ],
-      "icone": "assets/icones/barroth_icon.png",
-      "img": "assets/imagens/barroth.webp"
+      "icone": "assets/icones/lunastra_icon.png",
+      "img": "assets/imagens/lunastra.webp"
     },
     {
       "id": 39,
-      "name": "Barroth",
+      "name": "Odogaron",
       "type": "grande",
-      "especie": "brute wyvern",
+      "especie": "fanged wyvern",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
       "elemento": "nenhum",
       "aflicoes": [
@@ -20690,14 +20690,14 @@
           "parte": "cauda enlameada"
         }
       ],
-      "icone": "assets/icones/barroth_icon.png",
-      "img": "assets/imagens/barroth.webp"
+      "icone": "assets/icones/odogaron_icon.png",
+      "img": "assets/imagens/odogaron.webp"
     },
     {
       "id": 40,
-      "name": "Barroth",
+      "name": "Nergigante",
       "type": "grande",
-      "especie": "brute wyvern",
+      "especie": "elder dragon",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
       "elemento": "nenhum",
       "aflicoes": [
@@ -21536,14 +21536,14 @@
           "parte": "cauda enlameada"
         }
       ],
-      "icone": "assets/icones/barroth_icon.png",
-      "img": "assets/imagens/barroth.webp"
+      "icone": "assets/icones/nergigante_icon.png",
+      "img": "assets/imagens/nergigante.webp"
     },
     {
       "id": 41,
-      "name": "Barroth",
+      "name": "Paolumu",
       "type": "grande",
-      "especie": "brute wyvern",
+      "especie": "flying wyvern",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
       "elemento": "nenhum",
       "aflicoes": [
@@ -22382,14 +22382,14 @@
           "parte": "cauda enlameada"
         }
       ],
-      "icone": "assets/icones/barroth_icon.png",
-      "img": "assets/imagens/barroth.webp"
+      "icone": "assets/icones/paolumu_icon.png",
+      "img": "assets/imagens/paolumu.webp"
     },
     {
       "id": 42,
-      "name": "Barroth",
+      "name": "Pukei-Pukei",
       "type": "grande",
-      "especie": "brute wyvern",
+      "especie": "flying wyvern",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
       "elemento": "nenhum",
       "aflicoes": [
@@ -23228,12 +23228,12 @@
           "parte": "cauda enlameada"
         }
       ],
-      "icone": "assets/icones/barroth_icon.png",
-      "img": "assets/imagens/barroth.webp"
+      "icone": "assets/icones/pukei_pukei_icon.png",
+      "img": "assets/imagens/pukei_pukei.webp"
     },
     {
       "id": 43,
-      "name": "Barroth",
+      "name": "Radobaan",
       "type": "grande",
       "especie": "brute wyvern",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
@@ -24074,14 +24074,14 @@
           "parte": "cauda enlameada"
         }
       ],
-      "icone": "assets/icones/barroth_icon.png",
-      "img": "assets/imagens/barroth.webp"
+      "icone": "assets/icones/radobaan_icon.png",
+      "img": "assets/imagens/radobaan.webp"
     },
     {
       "id": 44,
-      "name": "Barroth",
+      "name": "Rathalos",
       "type": "grande",
-      "especie": "brute wyvern",
+      "especie": "flying wyvern",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
       "elemento": "nenhum",
       "aflicoes": [
@@ -24920,14 +24920,14 @@
           "parte": "cauda enlameada"
         }
       ],
-      "icone": "assets/icones/barroth_icon.png",
-      "img": "assets/imagens/barroth.webp"
+      "icone": "assets/icones/rathalos_icon.png",
+      "img": "assets/imagens/rathalos.webp"
     },
     {
       "id": 45,
-      "name": "Barroth",
+      "name": "Azure Rathalos",
       "type": "grande",
-      "especie": "brute wyvern",
+      "especie": "flying wyvern",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
       "elemento": "nenhum",
       "aflicoes": [
@@ -25766,14 +25766,14 @@
           "parte": "cauda enlameada"
         }
       ],
-      "icone": "assets/icones/barroth_icon.png",
-      "img": "assets/imagens/barroth.webp"
+      "icone": "assets/icones/azure_rathalos_icon.png",
+      "img": "assets/imagens/azure_rathalos.webp"
     },
     {
       "id": 46,
-      "name": "Barroth",
+      "name": "Rathian",
       "type": "grande",
-      "especie": "brute wyvern",
+      "especie": "flying wyvern",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
       "elemento": "nenhum",
       "aflicoes": [
@@ -26612,14 +26612,14 @@
           "parte": "cauda enlameada"
         }
       ],
-      "icone": "assets/icones/barroth_icon.png",
-      "img": "assets/imagens/barroth.webp"
+      "icone": "assets/icones/rathian_icon.png",
+      "img": "assets/imagens/rathian.webp"
     },
     {
       "id": 47,
-      "name": "Barroth",
+      "name": "Pink Rathian",
       "type": "grande",
-      "especie": "brute wyvern",
+      "especie": "flying wyvern",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
       "elemento": "nenhum",
       "aflicoes": [
@@ -27458,14 +27458,14 @@
           "parte": "cauda enlameada"
         }
       ],
-      "icone": "assets/icones/barroth_icon.png",
-      "img": "assets/imagens/barroth.webp"
+      "icone": "assets/icones/pink_rathian_icon.png",
+      "img": "assets/imagens/pink_rathian.webp"
     },
     {
       "id": 48,
-      "name": "Barroth",
+      "name": "Teostra",
       "type": "grande",
-      "especie": "brute wyvern",
+      "especie": "elder dragon",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
       "elemento": "nenhum",
       "aflicoes": [
@@ -28304,14 +28304,14 @@
           "parte": "cauda enlameada"
         }
       ],
-      "icone": "assets/icones/barroth_icon.png",
-      "img": "assets/imagens/barroth.webp"
+      "icone": "assets/icones/teostra_icon.png",
+      "img": "assets/imagens/teostra.webp"
     },
     {
       "id": 49,
-      "name": "Barroth",
+      "name": "Tobi-Kadachi",
       "type": "grande",
-      "especie": "brute wyvern",
+      "especie": "fanged wyvern",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
       "elemento": "nenhum",
       "aflicoes": [
@@ -29150,14 +29150,14 @@
           "parte": "cauda enlameada"
         }
       ],
-      "icone": "assets/icones/barroth_icon.png",
-      "img": "assets/imagens/barroth.webp"
+      "icone": "assets/icones/tobi_kadachi_icon.png",
+      "img": "assets/imagens/tobi_kadachi.webp"
     },
     {
       "id": 50,
-      "name": "Barroth",
+      "name": "Tzitzi-Ya-Ku",
       "type": "grande",
-      "especie": "brute wyvern",
+      "especie": "fanged wyvern",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
       "elemento": "nenhum",
       "aflicoes": [
@@ -29996,12 +29996,12 @@
           "parte": "cauda enlameada"
         }
       ],
-      "icone": "assets/icones/barroth_icon.png",
-      "img": "assets/imagens/barroth.webp"
+      "icone": "assets/icones/tzitzi_ya_ku_icon.png",
+      "img": "assets/imagens/tzitzi_ya_ku.webp"
     },
     {
       "id": 51,
-      "name": "Barroth",
+      "name": "Uragaan",
       "type": "grande",
       "especie": "brute wyvern",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
@@ -30842,14 +30842,14 @@
           "parte": "cauda enlameada"
         }
       ],
-      "icone": "assets/icones/barroth_icon.png",
-      "img": "assets/imagens/barroth.webp"
+      "icone": "assets/icones/Uragaan_icon.png",
+      "img": "assets/imagens/uragaan.webp"
     },
     {
       "id": 52,
-      "name": "Barroth",
+      "name": "Vaal Hazak",
       "type": "grande",
-      "especie": "brute wyvern",
+      "especie": "elder dragon",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
       "elemento": "nenhum",
       "aflicoes": [
@@ -31688,14 +31688,14 @@
           "parte": "cauda enlameada"
         }
       ],
-      "icone": "assets/icones/barroth_icon.png",
-      "img": "assets/imagens/barroth.webp"
+      "icone": "assets/icones/vaal_hazak_icon.png",
+      "img": "assets/imagens/vaal_hazak.webp"
     },
     {
       "id": 53,
-      "name": "Barroth",
+      "name": "Xeno'jiiv",
       "type": "grande",
-      "especie": "brute wyvern",
+      "especie": "elder dragon",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
       "elemento": "nenhum",
       "aflicoes": [
@@ -32534,14 +32534,14 @@
           "parte": "cauda enlameada"
         }
       ],
-      "icone": "assets/icones/barroth_icon.png",
-      "img": "assets/imagens/barroth.webp"
+      "icone": "assets/icones/xeno'jiiva_icon.png",
+      "img": "assets/imagens/xeno'jiiva.webp"
     },
     {
       "id": 54,
-      "name": "Barroth",
+      "name": "Zorah Magdaros",
       "type": "grande",
-      "especie": "brute wyvern",
+      "especie": "elder dragon",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
       "elemento": "nenhum",
       "aflicoes": [
@@ -33380,8 +33380,8 @@
           "parte": "cauda enlameada"
         }
       ],
-      "icone": "assets/icones/barroth_icon.png",
-      "img": "assets/imagens/barroth.webp"
+      "icone": "assets/icones/zorah_magdaros_icon.png",
+      "img": "assets/imagens/zorah_magdaros.webp"
     }
   ]
 }

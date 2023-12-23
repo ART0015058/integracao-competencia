@@ -6,10 +6,36 @@
     font-style: normal;
 }
 
-header{
-    background-image: url('../assets/fundo/fundo.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+header {
+    background-image: url('../assets/fundo/fundo.png') !important;
+    background-repeat: no-repeat!important;
+    background-size:cover !important;
+    position: fixed!important;
+    top: 0!important;
+    left: 0!important;
+    z-index: 999!important;
+}
+
+.navbar{
+    width: 100%;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.collapse .navbar-collapse{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.logo{
+    width: 50%;
+    height: 50%;
+
 }
 
 body{
@@ -19,6 +45,7 @@ body{
 }
 
 main{
+    margin-top: 25rem;
     margin-bottom: 5rem;
 }
 
@@ -55,21 +82,12 @@ footer > div{
     /*background-image: url(); buscar imagem de página de pergaminho ou papiro*/
 }
 
-.navbar-brand {
-    width: 25%; 
-    height: 25%
-}
-
 .navbar-toggler {
     top: 2rem;
     left: 2rem;
 }
 
-.collapse .navbar-collapse{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-}
+
 
 .nav-item{
     font-weight: 600;
