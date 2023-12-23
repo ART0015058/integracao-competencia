@@ -1,4 +1,4 @@
-import {getAllMonsters }from "./services.js"
+import { getAllMonsters }from "./services.js"
 
 window.onload = () => {
     carregarPequenos();
@@ -15,7 +15,7 @@ const carregarMonstros = async () => {
                 const monstroElement = document.createElement("div") 
                 monstroElement.innerHTML = `
                 <div>
-                    <p>${monstro.nome}</p>
+                    <p>${monstro.name}</p>
                 </div>
                 `;
                 dataContainer.appendChild(monstroElement);
@@ -29,17 +29,17 @@ const carregarMonstros = async () => {
 
 //carrega todos os monstros e filtra pelo type retornando apenas os pequenos
 const carregarPequenos = async () => {
-    const dataContainerB = documento.getElementById("monstrosPequenos");
+    const dataContainerB = document.getElementById("monstrosPequenos");
     try {
         getAllMonsters().then(resp =>{
             const monstrosPequenos = resp.filter(monstro => monstro.type === "pequeno");
             monstrosPequenos.forEach((monstro) => {
                 const monstroElementB = document.createElement("div")
                 monstroElementB.innerHTML = `
-                    <div class="card">
-                        <img class="card-img-top" src="${monstro.icone}" alt="${monstro.name}">
-                        <div class="card-body">
-                             <h5 class="car-title">${monstro.name}</h5>
+                    <div class="cartao">
+                        <img class="cartao-img" src="${monstro.icone}" alt="${monstro.name}">
+                        <div class="cartao-conteudo">
+                             <h5 class="cartao-nome">${monstro.name}</h5>
                         </div>
                     </div>
                 `;
@@ -54,7 +54,7 @@ const carregarPequenos = async () => {
 
 //carrega todos os monstros e filtra pelo type retornando apenas os grandes
 const carregarGrande = async () => {
-    const dataContainerC = documento.getElementById("monstrosGrandes");
+    const dataContainerC = document.getElementById("monstrosGrandes");
     try {
         getAllMonsters().then(resp =>{
             const monstrosGrandes = resp.filter(monstro => monstro.type === "grande");
