@@ -107,7 +107,7 @@ const carregarMonstrosComId = async () => {
 
 //Recebe os dados de pesquisa e retorna o monstro pedido
 const pesquisarMonstro = async () => {
-    const dataContainer = document.getElementById("resultado-busca");
+    const dataContainerBusca = document.getElementById("resultado-busca");
     const monstroBuscado = document.getElementById("termo-busca").value;
     try {
         getAllMonsters().then(resp => {
@@ -116,44 +116,139 @@ const pesquisarMonstro = async () => {
                 const monstroElementExibir = document.createElement("div")
                 monstroElementExibir.innerHTML = `
                 <div class="monstro-buscado">
+                <div>
                 <h2>${monstro.name}</h2>
-                <img src="${monstro.img}" alt="${monstro.name}">
-                <legend>nome:${monstro.name}, espécie:${monstro.especie}, tamanho:${monstro.type}</legend>
-                <p>${monstro.descricao}</p>
-                <table>
-                  <table-head>
-                    <tr>
-                      <th>Elementos</th>
-                      <th>Capaz de infligir</th>            
-                    </tr>
-                  </table-head>
-                  <table-body>
-                    <tr>
-                      <td>${monstro.elemento}</td>
-                      <td>${monstro.aflicoes.map(aflicao => aflicao.aflicao).join(', ')}</td>            
-                    </tr>
-                  </table-body>        
-                </table>
-                <p>Habitat: ${monstro.locais.map(local => local.nome).join(', ')}</p>
-                <p>${monstro.caracteristicas.map(caracteristica => caracteristica.parte).join(', ')}</p>
-                <table>
-                  <table-title>Recompensas</table-title>
-                  <table-head>
-                    <tr>
-                      <th>Low-Rank</th>
-                      <th>High-Rank</th>
-                    </tr>
-                  </table-head>
-                  <table-body>
-                    <tr>
-                        <td>${monstro.recompensas.lowrank.map(recompensa => recompensa.item).join(', ')}</td>
-                        <td>${monstro.recompensas.highrank.map(recompensa => recompensa.item).join(', ')}</td>
-                    </tr>
-                  </table-body>
-                </table>
-              </div>
+                <div>
+                    <div>
+                        <img src="${monstro.img}" alt="${monstro.name}">
+                        <legend>${monstro.name}, ${monstro.especie}, ${monstro.type}</legend>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="${monstro.icone}" alt="${monstro.name}">
+                        </div>
+                        <div>
+                            <p>Tipo: ${monstro.type}</p>
+                            <p>Espécie: ${monstro.especie}</p>
+                            <p>Habitat: ${monstro.local.map(local => local.nome).join(', ')}</p>
+                        </div>
+                        <div>
+                            <div>
+                                <h4>Descrição</h4>
+                                <p>${monstro.descricao}</p>
+                            </div>
+                            <div>
+                                <h4>Partes Quebráveis</h4>
+                                <ul>
+                                    <li>
+                                        ${monstro.partesquebraveis.map(partesquebraveis => partesquebraveis.parte).join(', ')}
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Elemento</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        ${monstro.elementos.map(elementos => elementos.elemento).join(', ')}
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Aflições</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        ${monstro.aflicoes.map(aflicoes => aflicoes.aflicao).join(', ')}
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div>
+                    <table>
+                        <caption>Fisiologia</caption>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <caption>Resistências a Aflições</caption>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <caption>Recompensas</caption>
+                        <thead>
+                            <tr>
+                                <th>Low Rank</th>
+                                <th>High Rank</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>${monstro.recompensas.map(recompensas => recompensas.lowrank).join(', ')}</td>
+                                <td>${monstro.recompensas.map(recompensas => recompensas.highrank).join(', ')}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+                </div>
                 `;
-                dataContainerC.appendChild(monstroElementC);
+                dataContainerBusca.appendChild(monstroElementC);
             });
         });
            

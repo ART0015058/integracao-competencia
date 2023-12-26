@@ -6,7 +6,7 @@
       "type": "pequeno",
       "especie": "herbívoro",
       "descricao": "Herbívoros que habitam Wildspire Waste. Eles desenvolveram uma pele particularmente dura para afastar os atacantes e são conhecidos por se reunirem em grupos para se defenderem.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": "nenhum",
       "locais": [
         {
@@ -213,7 +213,7 @@
       "type": "pequeno",
       "especie": "herbívoro",
       "descricao": "Herbívoros dóceis que pastam em bandos. Sua carne é considerada uma iguaria e rica em nutrientes. Se um membro do rebanho for atacado, os demais fugirão imediatamente.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": "nenhum",
       "locais": [
         {
@@ -420,7 +420,7 @@
       "type": "pequeno",
       "especie": "wingdrake",
       "descricao": "Dragões alados fervorosos que floresceram sob duras condições de vida. Eles atacam os intrusos com um agente ácido único e depois atacam como um enxame",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": [
         {
           "id": 1,
@@ -645,7 +645,7 @@
       "type": "pequeno",
       "especie": "lynian",
       "descricao": "Essas tribos podem ser encontradas na Floresta Antiga, em Wildspire Waste, em Coral Highlands, em Elder's Recess e nas Cavernas de El Dorado. eles são extremamente hostis quando abordados de perto. Eles são a única tribo Lyniana no Novo Mundo governada por um líder maior e mais forte, o Chefe Gajalaka.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": [
         {
           "id": 1,
@@ -900,7 +900,7 @@
       "type": "pequeno",
       "especie": "piscine",
       "descricao": "Piscine cruel que forma grupos para defender seu território de intrusos. Certifique-se de não se aventurar muito perto de seu habitat!",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": "nenhum",
       "locais": [
         {
@@ -1121,7 +1121,7 @@
       "type": "pequeno",
       "especie": "herbívoro",
       "descricao": "Rebanho de monstros que habitam o Elder's Recess. Eles se irritam facilmente com intrusos e atacarão monstros com o dobro do seu tamanho.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": "nenhum",
       "locais": [
         {
@@ -1333,7 +1333,7 @@
       "type": "pequeno",
       "especie": "fanged wyvern",
       "descricao": "Monstros que atacam em bandos, usando o vapor mortal do Vale Podre a seu favor. Eles são conhecidos por paralisar alvos com suas presas paralisantes.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": [
         {
           "id": 1,
@@ -1569,7 +1569,7 @@
       "type": "pequeno",
       "especie": "lynian",
       "descricao": "Grimalkyne estão organizados em diferentes tribos encontradas em diversas áreas. Os Bugtrappers são encontrados na Floresta Antiga, os Protetores são encontrados em Wildspire Waste, os Troupers são encontrados em Coral Highlands e os Saqueadores são encontrados em Rotten Vale.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": "nenhum",
       "locais": [
         {
@@ -1604,7 +1604,7 @@
       "type": "pequeno",
       "especie": "neopteron",
       "descricao": "Pequenos insetos encontrados principalmente em terra. Eles são altamente territoriais e atacarão qualquer coisa que se aproxime deles. Reúna seus materiais atacando-os com o lançador.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": "nenhum",
       "locais": [
         {
@@ -1783,7 +1783,7 @@
       "type": "pequeno",
       "especie": "fanged wyvern",
       "descricao": "Membros da matilha dos Grandes Jagras, esses monstros menores fugirão ao ver um deles morrer. Eles também são conhecidos por emboscar monstros maiores a qualquer momento.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": "nenhum",
       "locais": [
         {
@@ -2010,7 +2010,7 @@
       "type": "pequeno",
       "especie": "herbívoro",
       "descricao": "Pequenos herbívoros conhecidos por seu comportamento gentil e pelas propriedades medicinais de seus chifres. Aqueles que desejam colher um chifre devem mirar na cabeça ao atacá-los.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": "nenhum",
       "locais": [
         {
@@ -2253,7 +2253,7 @@
       "type": "pequeno",
       "especie": "herbívoro",
       "descricao": "A fêmea Kestodon alertará a matilha sobre o perigo, enquanto os machos atacarão violentamente possíveis ameaças. No entanto, suas investidas rápidas podem ser bloqueadas, deixando-os abertos ao ataque.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": [
         {
           "id": 1,
@@ -2479,7 +2479,7 @@
       "type": "pequeno",
       "especie": "wingdrake",
       "descricao": "Wingdrakes que se alimentam de nozes dispersas. O rebanho percorrerá grandes distâncias quando assustado, o que os torna um meio de transporte inestimável para caçadores inteligentes.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": [
         {
           "id": 1,
@@ -2715,7 +2715,7 @@
       "type": "pequeno",
       "especie": "herbívoro",
       "descricao": "Os Mosswine são conhecidos por seu excelente olfato e são frequentemente encontrados em busca de fungos. Se você estiver caçando cogumelos, siga o Mosswine até o filão principal.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": "nenhum",
       "locais": [
         {
@@ -2872,7 +2872,7 @@
       "type": "pequeno",
       "especie": "wingdrake",
       "descricao": "Wingdrakes que produzirão um som semelhante ao dos gritos quando assustados. Use carne para chamar a atenção deles e depois cace-os em busca de materiais ou use-os como transporte.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": "nenhum",
       "locais": [
         {
@@ -3089,7 +3089,7 @@
       "type": "pequeno",
       "especie": "wingdrake",
       "descricao": "Wingdrakes habitando as Terras Altas de Coral. Eles se agrupam para roubar ovos de outros animais, mas isso, por sua vez, os expõe à atenção de predadores maiores e mais cruéis.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": [
         {
           "id": 1,
@@ -3315,7 +3315,7 @@
       "type": "pequeno",
       "especie": "fanged wyvern",
       "descricao": "Pequenos monstros noturnos. Eles são particularmente vulneráveis ​​ao clarão ofuscante de Tzitzi-Ya-Ku, mas são conhecidos por se unirem contra os inimigos.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": "nenhum",
       "locais": [
         {
@@ -3542,7 +3542,7 @@
       "type": "pequeno",
       "especie": "neopteron",
       "descricao": "Insetos que paralisam seus alvos com seus longos ferrões. Eles quebram facilmente, então ataque-os com veneno ou munição de lançador se quiser esculpi-los.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": [
         {
           "id": 1,
@@ -3732,7 +3732,7 @@
       "type": "grande",
       "especie": "relict",
       "descricao": "Um velho Leshen que chegou através de um portal para assumir o controle da Ancient Forest. Às vezes reverenciado como uma divindade indígena.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": [
         {
           "id": 1,
@@ -4176,7 +4176,7 @@
       "type": "grande",
       "especie": "brute wyvern",
       "descricao": "O Anjanath patrulha a Ancient Forest em busca de sua refeição favorita, Aptonoth. Este monstro beligerante atacará qualquer coisa sem a menor provocação.",
-      "elemento": [
+      "elementos": [
         {
           "id": 1,
           "elemento": "fogo"
@@ -4924,7 +4924,7 @@
       "type": "grande",
       "especie": "brute wyvern",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": [
         {
           "id": 1,
@@ -5770,7 +5770,7 @@
       "type": "grande",
       "especie": "flying wyvern",
       "descricao": "Um nefasto flying wyvern que viaja pelo Novo Mundo em busca de presas. Ele espalha escamas explosivas por uma ampla área para atacar tudo o que for pego pela explosão.",
-      "elemento": [
+      "elementos": [
         {
           "id": 1,
           "elemento": "fogo"
@@ -6310,7 +6310,7 @@
       "type": "grande",
       "especie": "brute wyvern",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": [
         {
           "id": 1,
@@ -7156,7 +7156,7 @@
       "type": "grande",
       "especie": "brute wyvern",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": [
         {
           "id": 1,
@@ -8002,7 +8002,7 @@
       "type": "grande",
       "especie": "brute wyvern",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": [
         {
           "id": 1,
@@ -8848,7 +8848,7 @@
       "type": "grande",
       "especie": "brute wyvern",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": [
         {
           "id": 1,
@@ -9694,7 +9694,7 @@
       "type": "grande",
       "especie": "brute wyvern",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": [
         {
           "id": 1,
@@ -10540,7 +10540,7 @@
       "type": "grande",
       "especie": "brute wyvern",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": [
         {
           "id": 1,
@@ -11386,7 +11386,7 @@
       "type": "grande",
       "especie": "fanged wyvern",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": [
         {
           "id": 1,
@@ -12232,7 +12232,7 @@
       "type": "grande",
       "especie": "piscine wyvern",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": [
         {
           "id": 1,
@@ -13078,7 +13078,7 @@
       "type": "grande",
       "especie": "elder dragon",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": [
         {
           "id": 1,
@@ -13924,7 +13924,7 @@
       "type": "grande",
       "especie": "bird wyvern",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": [
         {
           "id": 1,
@@ -14770,7 +14770,7 @@
       "type": "grande",
       "especie": "brute wyvern",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": [
         {
           "id": 1,
@@ -15616,7 +15616,7 @@
       "type": "grande",
       "especie": "elder dragon",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": [
         {
           "id": 1,
@@ -16462,7 +16462,7 @@
       "type": "grande",
       "especie": "piscine wyvern",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": [
         {
           "id": 1,
@@ -17308,7 +17308,7 @@
       "type": "grande",
       "especie": "flying wyvern",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": [
         {
           "id": 1,
@@ -18154,7 +18154,7 @@
       "type": "grande",
       "especie": "relict",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": [
         {
           "id": 1,
@@ -19000,7 +19000,7 @@
       "type": "grande",
       "especie": "elder dragon",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": [
         {
           "id": 1,
@@ -19846,7 +19846,7 @@
       "type": "grande",
       "especie": "fanged wyvern",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": [
         {
           "id": 1,
@@ -20692,7 +20692,7 @@
       "type": "grande",
       "especie": "elder dragon",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": [
         {
           "id": 1,
@@ -21538,7 +21538,7 @@
       "type": "grande",
       "especie": "flying wyvern",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": [
         {
           "id": 1,
@@ -22384,7 +22384,7 @@
       "type": "grande",
       "especie": "flying wyvern",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": [
         {
           "id": 1,
@@ -23230,7 +23230,7 @@
       "type": "grande",
       "especie": "brute wyvern",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": [
         {
           "id": 1,
@@ -24076,7 +24076,7 @@
       "type": "grande",
       "especie": "flying wyvern",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": [
         {
           "id": 1,
@@ -24922,7 +24922,7 @@
       "type": "grande",
       "especie": "flying wyvern",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": [
         {
           "id": 1,
@@ -25768,7 +25768,7 @@
       "type": "grande",
       "especie": "flying wyvern",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": [
         {
           "id": 1,
@@ -26614,7 +26614,7 @@
       "type": "grande",
       "especie": "flying wyvern",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": [
         {
           "id": 1,
@@ -27460,7 +27460,7 @@
       "type": "grande",
       "especie": "elder dragon",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": [
         {
           "id": 1,
@@ -28306,7 +28306,7 @@
       "type": "grande",
       "especie": "fanged wyvern",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": [
         {
           "id": 1,
@@ -29152,7 +29152,7 @@
       "type": "grande",
       "especie": "fanged wyvern",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": [
         {
           "id": 1,
@@ -29998,7 +29998,7 @@
       "type": "grande",
       "especie": "brute wyvern",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": [
         {
           "id": 1,
@@ -30844,7 +30844,7 @@
       "type": "grande",
       "especie": "elder dragon",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": [
         {
           "id": 1,
@@ -31690,7 +31690,7 @@
       "type": "grande",
       "especie": "elder dragon",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": [
         {
           "id": 1,
@@ -32536,7 +32536,7 @@
       "type": "grande",
       "especie": "elder dragon",
       "descricao": "Barroth procura formigas, seu lanche preferido, e marca seu território com lama. Eles atacam rivais em potencial com seu ataque devastador.",
-      "elemento": "nenhum",
+      "elementos": "nenhum",
       "aflicoes": [
         {
           "id": 1,
