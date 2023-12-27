@@ -9,6 +9,7 @@ window.onload = () => {
         event.preventDefault();
         await pesquisarMonstro();
         await createTableFisiologia();
+        await createTableResistenciaAflicoes();
     })
 }
 
@@ -82,28 +83,6 @@ const carregarGrande = async () => {
         
     } catch (error) {
         console.log("Error >>>", error);
-    }
-};
-
-//segunda função de carregar monstros só que com o id para facilitar a edição
-const carregarMonstrosComId = async () => {
-    const dataContainer = document.getElementById("todos-monstros-id");
-    try {
-        getAllMonsters().then(resp => {
-            resp.forEach((monstro) => {
-                const monstroElement = document.createElement("div") 
-                monstroElement.innerHTML = `
-                <div>
-                    <h5>${monstro.id}</h5>
-                    <p>${monstro.name}</p>
-                </div>
-                `;
-                dataContainer.appendChild(monstroElement);
-            });
-        });
-        
-    } catch (error) {
-        console.log('Error >>>', error);
     }
 };
 
@@ -257,12 +236,11 @@ const createTableFisiologia = async () => {
         if (monstroSelecionado) {
             const monstroTabelaZona = document.createElement('tbody');
 
-            monstroSelecionado.caracteristicas.zonadedano.forEach(zonadedano => {
+            monstroSelecionado.caracteristicas.zonadedano.padrao.forEach(padrao => {
                 const tr = document.createElement('tr');
                 tr.innerHTML = `
-                    <td>${zonadedano.parte}</td>
-                    <td>${zonadedano.tipo.map(tipo => tipo.)}</td>
-
+                    <td>${padrao.tipo}</td>
+                    <td>${padrao.eficiencia.map(eficiencia => eficiencia.maneira)}</td>
                 `;
                 monstroTabelaZona.appendChild(tr);
             });
@@ -307,6 +285,123 @@ const createTableResistenciaAflicoes = async () => {
     }
 };
 
+//criar e substituir na procura
+const createTableElementos = async () => {
+    const tableContainerB = document.getElementById("resistenciaaflicoescorpo");
+    const monstroBuscado = document.getElementById("termo-busca").value;
+    try {
+        const monstros = await getAllMonsters();
+        const monstroSelecionado = monstros.find(monstro => monstro.name === monstroBuscado);
+
+        if (monstroSelecionado) {
+            const monstroTabelaResit = document.createElement('tbody');
+
+            monstroSelecionado.caracteristicas.resistenciaaflicoes.forEach(resistenciaaflicoes => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td>${resistenciaaflicoes.aflicao}</td>
+                    <td>${resistenciaaflicoes.resistenciainicial}</td>
+                    <td>${resistenciaaflicoes.reducaonatural}</td>
+                    <td>${resistenciaaflicoes.duracao}</td>
+                    <td>${resistenciaaflicoes.danototal}</td>
+                `;
+                monstroTabelaResit.appendChild(tr);
+            });
+
+            tableContainerB.appendChild(monstroTabelaZona);
+        } else {
+            console.log("Monstro não encontrado");
+        }
+    } catch (error) {
+        console.error('Erro ao carregar monstros', error);
+    }
+};
+
+//criar e substituir na procura
+const createTableAflicoes = async () => {
+    const tableContainerB = document.getElementById("resistenciaaflicoescorpo");
+    const monstroBuscado = document.getElementById("termo-busca").value;
+    try {
+        const monstros = await getAllMonsters();
+        const monstroSelecionado = monstros.find(monstro => monstro.name === monstroBuscado);
+
+        if (monstroSelecionado) {
+            const monstroTabelaResit = document.createElement('tbody');
+
+            monstroSelecionado.caracteristicas.resistenciaaflicoes.forEach(resistenciaaflicoes => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td>${resistenciaaflicoes.aflicao}</td>
+                    <td>${resistenciaaflicoes.resistenciainicial}</td>
+                    <td>${resistenciaaflicoes.reducaonatural}</td>
+                    <td>${resistenciaaflicoes.duracao}</td>
+                    <td>${resistenciaaflicoes.danototal}</td>
+                `;
+                monstroTabelaResit.appendChild(tr);
+            });
+
+            tableContainerB.appendChild(monstroTabelaZona);
+        } else {
+            console.log("Monstro não encontrado");
+        }
+    } catch (error) {
+        console.error('Erro ao carregar monstros', error);
+    }
+};
+
+//criar e substituir na procura
+const createTableRecompensas = async () => {
+    const tableContainerB = document.getElementById("resistenciaaflicoescorpo");
+    const monstroBuscado = document.getElementById("termo-busca").value;
+    try {
+        const monstros = await getAllMonsters();
+        const monstroSelecionado = monstros.find(monstro => monstro.name === monstroBuscado);
+
+        if (monstroSelecionado) {
+            const monstroTabelaResit = document.createElement('tbody');
+
+            monstroSelecionado.caracteristicas.resistenciaaflicoes.forEach(resistenciaaflicoes => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td>${resistenciaaflicoes.aflicao}</td>
+                    <td>${resistenciaaflicoes.resistenciainicial}</td>
+                    <td>${resistenciaaflicoes.reducaonatural}</td>
+                    <td>${resistenciaaflicoes.duracao}</td>
+                    <td>${resistenciaaflicoes.danototal}</td>
+                `;
+                monstroTabelaResit.appendChild(tr);
+            });
+
+            tableContainerB.appendChild(monstroTabelaZona);
+        } else {
+            console.log("Monstro não encontrado");
+        }
+    } catch (error) {
+        console.error('Erro ao carregar monstros', error);
+    }
+};
+
+//segunda função de carregar monstros só que com o id para facilitar a edição
+const carregarMonstrosComId = async () => {
+    const dataContainer = document.getElementById("todos-monstros-id");
+    try {
+        getAllMonsters().then(resp => {
+            resp.forEach((monstro) => {
+                const monstroElement = document.createElement("div") 
+                monstroElement.innerHTML = `
+                <div>
+                    <h5>${monstro.id}</h5>
+                    <p>${monstro.name}</p>
+                </div>
+                `;
+                dataContainer.appendChild(monstroElement);
+            });
+        });
+        
+    } catch (error) {
+        console.log('Error >>>', error);
+    }
+};
 
 
 /*const carregarPequenos = async () => {
