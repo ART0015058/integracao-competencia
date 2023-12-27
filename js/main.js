@@ -3,16 +3,16 @@ import { getAllMonsters }from "./services.js"
 window.onload = () => {
     carregarPequenos();
     carregarGrande();
-    carregarMonstros();
-    const formularioBusca = document.getElementById("formulario-busca");
-    formularioBusca.addEventListener("submit", async (event) =>{
-        event.preventDefault();
-        await pesquisarMonstro();
-        await createTableFisiologia();
-        await createTableResistenciaAflicoes();
-    })
+    carregarMonstros(); 
 }
 
+const formularioBusca = document.getElementById("formulario-busca");
+formularioBusca.addEventListener("submit", async (event) =>{
+    event.preventDefault();
+    await pesquisarMonstro();
+    await createTableFisiologia();
+    await createTableResistenciaAflicoes();
+})
 
 //Carrega todos os monstro mas gera apenas os nomes
 const carregarMonstros = async () => {
@@ -87,7 +87,16 @@ const carregarGrande = async () => {
 };
 
 //Recebe os dados de pesquisa e retorna o monstro pedido
-const pesquisarMonstro = async () => {
+document.addEventListener('DOMContentLoaded', function() {
+    var btnBusca = document.getElementById('btn-busca');
+    btnBusca.addEventListener('click', function() {
+        pesquisarMonstro();
+        createTableFisiologia();
+        createTableResistenciaAflicoes();
+    });
+});
+
+function pesquisarMonstro () {
     const dataContainerBusca = document.getElementById("resultado-busca");
     const monstroBuscado = document.getElementById("termo-busca").value;
     try {
@@ -111,7 +120,7 @@ const pesquisarMonstro = async () => {
                         <div>
                             <p>Tipo: ${monstro.type}</p>
                             <p>Espécie: ${monstro.especie}</p>
-                            <p>Habitat: ${monstro.local.map(local => local.nome).join(', ')}</p>
+                            <p>Habitat: ${Array.isArray(monstro.local) ? monstro.local.map(local => local.nome).join(', ') : ''}</p>
                         </div>
                         <div>
                             <div>
@@ -122,7 +131,7 @@ const pesquisarMonstro = async () => {
                                 <h4>Partes Quebráveis</h4>
                                 <ul>
                                     <li>
-                                        ${monstro.partesquebraveis.map(partesquebraveis => partesquebraveis.parte).join(', ')}
+                                    ${Array.isArray(monstro.partesquebraveis) ? monstro.partesquebraveis.map(partesquebraveis => partesquebraveis.parte).join(', ') : ''}
                                     </li>
                                 </ul>
                             </div>
@@ -140,7 +149,7 @@ const pesquisarMonstro = async () => {
                             <tbody>
                                 <tr>
                                     <td>
-                                        ${monstro.elementos.map(elementos => elementos.elemento).join(', ')}
+                                    ${Array.isArray(monstro.elementos) ? monstro.elementos.map(elementos => elementos.elemento).join(', ') : ''}
                                     </td>
                                 </tr>
                             </tbody>
@@ -156,7 +165,7 @@ const pesquisarMonstro = async () => {
                             <tbody>
                                 <tr>
                                     <td>
-                                        ${monstro.aflicoes.map(aflicoes => aflicoes.aflicao).join(', ')}
+                                    ${Array.isArray(monstro.elementos) ? monstro.elementos.map(elementos => elementos.elemento).join(', ') : ''}
                                     </td>
                                 </tr>
                             </tbody>
@@ -207,8 +216,8 @@ const pesquisarMonstro = async () => {
                         </thead>
                         <tbody>
                             <tr>
-                                <td>${monstro.recompensas.map(recompensas => recompensas.lowrank).join(', ')}</td>
-                                <td>${monstro.recompensas.map(recompensas => recompensas.highrank).join(', ')}</td>
+                                <td>${Array.isArray(monstro.aflicoes) ? monstro.aflicoes.map(aflicoes => aflicoes.aflicao).join(', ') : ''}</td>
+                                <td>${Array.isArray(monstro.recompensas) ? monstro.recompensas.map(recompensas => recompensas.lowrank).join(', ') : ''}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -216,7 +225,7 @@ const pesquisarMonstro = async () => {
             </div>
                 </div>
                 `;
-                dataContainerBusca.appendChild(monstroElementC);
+                dataContainerBusca.appendChild(monstroElementExibir);
             });
         });
            
