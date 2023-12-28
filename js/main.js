@@ -1,9 +1,23 @@
 import { getAllMonsters }from "./services.js"
 
 window.onload = () => {
-    carregarPequenos();
-    carregarGrande();
-    carregarMonstros(); 
+    // carregarPequenos();
+    // carregarGrande();
+    // carregarMonstros();
+    loadAllMonsters().then(monstros => {
+        generateElements();
+    }) 
+}
+
+const loadAllMonsters = () =>{
+    return getAllMonsters().then(monstros => {
+        return montros;
+    })
+}
+
+const generateElements = () => {
+    
+    const
 }
 
 // const formularioBusca = document.getElementById("formulario-busca");
