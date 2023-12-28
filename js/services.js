@@ -12,6 +12,39 @@ export const getAllMonsters= async() =>{
   }
 };
 
+export const createMonstro = async (monstro) => {
+  fetch ( URL, {
+      method: "POST",
+      headers: {
+          "Content-Type": "application/json",
+      },
+      body: JSON.stringify(monstro),
+  })
+  .then((response) => response.json())
+  .then((data) => console.log("sucesso: ", data))
+  .catch((error) => console.log("Erro: ", error));
+};
+
+export const deleteMonstro = async (monstro) => {
+  fetch(URL + `/${monstro.id}`, { method: "DELETE" })
+  .then((response) => response.json())
+  .then((data) => console.log("sucesso: ", data))
+  .catch((error) => console.log("Erro: ", error));
+};
+
+export const updateMonstro = async (monstro) => {
+  fetch(URL + `/${monstro.id}`, {
+    method: "PATCH",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(monstro),
+  })
+    .then((response) => response.json())
+    .then((data) => console.log("sucesso: ", data))
+    .catch((error) => console.log("Erro: ", error));
+};
+
 /*export const getAllSmallMonsters = async () => {
   try{
     const response = await fetch(URL);

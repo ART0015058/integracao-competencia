@@ -1,227 +1,259 @@
-import { getAllMonsters }from "./services.js"
+import { getAllMonsters, createMonstro, deleteMonstro, updateMonstro  }from "./services.js"
 
-class MonsterLoader {
-    constructor() {
-        this.dataContainer = document.getElementById("todos-monstros");
-        this.dataContainerPequenos = document.getElementById("monstrosPequenos");
-        this.dataContainerGrandes = document.getElementById("monstrosGrandes");
-        this.dataContainerBusca = document.getElementById("resultado-busca")
-    }
-
-    async loadMonsters() {
-        try {
-            const monsters = await getAllMonsters();
-            this.displayMonsters(monsters);
-            this.displayMonsterPequenos(monsters);
-            this.displayMonsterGrandes(monsters);
-            return monsters; // Adicione esta linha
-        } catch (error) {
-            console.log("Error >>>", error);
-            return []; // Ou retorne um array vazio em caso de erro
-        }
-    }
-
-    displayMonsters(monsters) {
-        monsters.forEach((monstro) => {
-            const monstroElement = document.createElement("div");
-            monstroElement.innerHTML = `
-                <div>
-                    <p>${monstro.name}</p>
-                </div>
-            `;
-            this.dataContainer.appendChild(monstroElement);
-        });
-    }
-
-    displayMonsterPequenos(monsters) {
-        const monstrosPequenos = monsters.filter(monstro => monstro.type === "pequeno");
-
-        monstrosPequenos.forEach((monstro) => {
-            const monstroElementPequeno = document.createElement("div")
-            monstroElementPequeno.innerHTML = `
-                <div class="cartao">
-                    <img class="cartao-img" src="${monstro.icone}" alt="${monstro.name}">
-                    <div class="cartao-conteudo">
-                         <h5 class="cartao-nome">${monstro.name}</h5>
-                    </div>
-                </div>
-            `;
-            this.dataContainerPequenos.appendChild(monstroElementPequeno);
-        });
-    }
-
-    displayMonsterGrandes(monsters) {
-        const monstrosGrandes = monsters.filter(monstro => monstro.type === "grande");
-        monstrosGrandes.forEach((monstro) => {
-            const monstroElementGrande = document.createElement("div")
-            monstroElementGrande.innerHTML = `
-                <div class="cartao">
-                    <img class="cartao-img" src="${monstro.icone}" alt="${monstro.name}">
-                    <div class="cartao-conteudo">
-                         <h5 class="cartao-nome">${monstro.name}</h5>
-                    </div>
-                </div>
-            `;
-            this.dataContainerGrandes.appendChild(monstroElementGrande);
-        });
-    }
-
-    displayBusca(monsters) {
-        const monstroBuscado = document.getElementById("termo-busca").value;
-        const monstrosExibir = monsters.filter(monstro => monstro.name === monstroBuscado);
-        const dataContainerBusca = document.getElementById("resultado-busca");
-        monstrosExibir.forEach((monstro) => {
-            const monstroElementExibir = document.createElement("div");
-            monstroElementExibir.innerHTML = `
-                <div class="monstro-buscado">
-                    <div>
-                        <h2>${monstro.name}</h2>
-                        <div style="display:flex; flex-wrap:wrap;">
-                            <div>
-                                <img src="${monstro.img}" alt="${monstro.name}" class="img-monstro">
-                                <legend>${monstro.name}, ${monstro.especie}, ${monstro.type}</legend>
-                            </div>
-                            <div style="width:120px;height:120px">
-                                <img src="${monstro.icone}" alt="${monstro.name}" class="img-icon">
-                            </div>
-                            <div style="display:flex; flex-wrap:wrap;">
-                                <div>
-                                    <h5>Tipo</h5>
-                                    <p>${monstro.type}</p>
-                                </div>
-                                <br>
-                                <div>
-                                    <h5>Espécie</h5>
-                                    <p>${monstro.especie}</p>
-                                </div>
-                                <br>
-                                <div>
-                                <table>
-                                <thead>
-                                  <tr>
-                                    <th>Habitat</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  ${monstro.locais && monstro.locais.length > 0
-                                    ? monstro.locais.map(local => `<tr><td>${local.nome}</td></tr>`).join('')
-                                    : '<tr><td>Nenhum local disponível</td></tr>'}
-                                </tbody>
-                              </table>
-                                </div>
-                                <br>
-                                <div>
-                                    <h4>Descrição</h4>
-                                    <p>${monstro.descricao}</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        ${monstro.elementos && monstro.elementos.length > 0
-                            ? `
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th>Elemento</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        ${monstro.elementos.map(elemento => `<tr><td>${elemento.elemento}</td></tr>`).join('')}
-                                    </tbody>
-                                </table>`
-                            : '<p>Nenhum elemento disponível</p>'}                        
-                    </div>
-                    <div>
-                        ${monstro.aflicoes && monstro.aflicoes.length > 0
-                            ? `
-                                <table>
-                                <thead>
-                              <tr>
-                                <th>Aflições</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              ${monstro.aflicoes.map(aflicao => `<tr><td>${aflicao.aflicao}</td></tr>`).join('')}
-                            </tbody>
-                          </table>`
-                        : '<p>Nenhuma aflição disponível</p>'}
-                    </div>
-                    <div>
-                    ${monstro.zonas && monstro.zonas.length > 0
-                        ? `
-                        <table>
-                            <caption>Fisiologia - Dano</caption>
-                            <thead>
-                                ${monstro.zonas.map(zona => `<tr><td>${zona.parte}</td></tr>`).join('')}
-                            </thead>
-                            <tbody>
-                            ${zona.padrao.map(item => `
-                        <tr>
-                            <td>${item.tipo}</td>
-                            <td>${item.eficiencia.map(ef => `${ef.maneira}: ${ef.valor}`).join(', ')}</td>
-                        </tr>`).join('')}
-                            </tbody>
-                        </table>`
-                    : '<p>Nenhuma aflição disponível</p>'}               
-                    </div>
-                </div>
-            `;
-            this.dataContainerBusca.appendChild(monstroElementExibir);
-        });
-    }
-    
-    
+window.onload = () => {
+    loadAllMonsters().then(monstros => {generateElements(carregarMonstros(monstros));})
 }
 
-// const formularioBusca = document.getElementById("formulario-busca");
+const loadAllMonsters = () =>{return getAllMonsters().then(monstros => {return monstros;})}
+
+const generateElements = () => {
+    function CarregarMonstros () {
+        const dataContainer = document.getElementById("todos-monstros");
+         
+    }
+}
+
+//esse bloco funciona junto
+// class MonsterLoader {
+//     constructor() {
+//         this.dataContainer = document.getElementById("todos-monstros");
+//         this.dataContainerPequenos = document.getElementById("monstrosPequenos");
+//         this.dataContainerGrandes = document.getElementById("monstrosGrandes");
+//         this.dataContainerBusca = document.getElementById("resultado-busca")
+//     }
+//     async loadMonsters() {
+//         try {
+//             const monsters = await getAllMonsters();
+//             this.displayMonsters(monsters);
+//             this.displayMonsterPequenos(monsters);
+//             this.displayMonsterGrandes(monsters);
+//             return monsters; // Adicione esta linha
+//         } catch (error) {
+//             console.log("Error >>>", error);
+//             return []; // Ou retorne um array vazio em caso de erro
+//         }
+//     }
+//     displayMonsters(monsters) {
+//         monsters.forEach((monstro) => {
+//             const monstroElement = document.createElement("div");
+//             monstroElement.innerHTML = `
+//                 <div>
+//                     <p>${monstro.name}</p>
+//                 </div>
+//             `;
+//             this.dataContainer.appendChild(monstroElement);
+//         });
+//     }
+//     displayMonsterPequenos(monsters) {
+//         const monstrosPequenos = monsters.filter(monstro => monstro.type === "pequeno");
+//         monstrosPequenos.forEach((monstro) => {
+//             const monstroElementPequeno = document.createElement("div")
+//             monstroElementPequeno.innerHTML = `
+//                 <div class="cartao">
+//                     <img class="cartao-img" src="${monstro.icone}" alt="${monstro.name}">
+//                     <div class="cartao-conteudo">
+//                          <h5 class="cartao-nome">${monstro.name}</h5>
+//                     </div>
+//                 </div>
+//             `;
+//             this.dataContainerPequenos.appendChild(monstroElementPequeno);
+//         });
+//     }
+//     displayMonsterGrandes(monsters) {
+//         const monstrosGrandes = monsters.filter(monstro => monstro.type === "grande");
+//         monstrosGrandes.forEach((monstro) => {
+//             const monstroElementGrande = document.createElement("div")
+//             monstroElementGrande.innerHTML = `
+//                 <div class="cartao">
+//                     <img class="cartao-img" src="${monstro.icone}" alt="${monstro.name}">
+//                     <div class="cartao-conteudo">
+//                          <h5 class="cartao-nome">${monstro.name}</h5>
+//                     </div>
+//                 </div>
+//             `;
+//             this.dataContainerGrandes.appendChild(monstroElementGrande);
+//         });
+//     }
+//     displayBusca(monsters) {
+//         const monstroBuscado = document.getElementById("termo-busca").value;
+//         const monstrosExibir = monsters.filter(monstro => monstro.name === monstroBuscado);
+//         const dataContainerBusca = document.getElementById("resultado-busca");
+//         monstrosExibir.forEach((monstro) => {
+//             const monstroElementExibir = document.createElement("div");
+//             monstroElementExibir.innerHTML = `
+//                 <div class="monstro-buscado">
+//                     <div>
+//                         <h2>${monstro.name}</h2>
+//                         <div style="display:flex; flex-wrap:wrap;">
+//                             <div>
+//                                 <img src="${monstro.img}" alt="${monstro.name}" class="img-monstro">
+//                                 <legend>${monstro.name}, ${monstro.especie}, ${monstro.type}</legend>
+//                             </div>
+//                             <div style="width:120px;height:120px">
+//                                 <img src="${monstro.icone}" alt="${monstro.name}" class="img-icon">
+//                             </div>
+//                             <div style="display:flex; flex-wrap:wrap;">
+//                                 <div>
+//                                     <h5>Tipo</h5>
+//                                     <p>${monstro.type}</p>
+//                                 </div>
+//                                 <br>
+//                                 <div>
+//                                     <h5>Espécie</h5>
+//                                     <p>${monstro.especie}</p>
+//                                 </div>
+//                                 <br>
+//                                 <div>
+//                                 <table>
+//                                 <thead>
+//                                   <tr>
+//                                     <th>Habitat</th>
+//                                   </tr>
+//                                 </thead>
+//                                 <tbody>
+//                                   ${monstro.locais && monstro.locais.length > 0
+//                                     ? monstro.locais.map(local => `<tr><td>${local.nome}</td></tr>`).join('')
+//                                     : '<tr><td>Nenhum local disponível</td></tr>'}
+//                                 </tbody>
+//                               </table>
+//                                 </div>
+//                                 <br>
+//                                 <div>
+//                                     <h4>Descrição</h4>
+//                                     <p>${monstro.descricao}</p>
+//                                 </div>
+//                             </div>
+//                         </div>
+//                     </div>
+//                     <div>
+//                         ${monstro.elementos && monstro.elementos.length > 0
+//                             ? `
+//                                 <table>
+//                                     <thead>
+//                                         <tr>
+//                                             <th>Elemento</th>
+//                                         </tr>
+//                                     </thead>
+//                                     <tbody>
+//                                         ${monstro.elementos.map(elemento => `<tr><td>${elemento.elemento}</td></tr>`).join('')}
+//                                     </tbody>
+//                                 </table>`
+//                             : '<p>Nenhum elemento disponível</p>'}                        
+//                     </div>
+//                     <div>
+//                         ${monstro.aflicoes && monstro.aflicoes.length > 0
+//                             ? `
+//                                 <table>
+//                                 <thead>
+//                               <tr>
+//                                 <th>Aflições</th>
+//                               </tr>
+//                             </thead>
+//                             <tbody>
+//                               ${monstro.aflicoes.map(aflicao => `<tr><td>${aflicao.aflicao}</td></tr>`).join('')}
+//                             </tbody>
+//                           </table>`
+//                         : '<p>Nenhuma aflição disponível</p>'}
+//                     </div>
+//                     <div>
+//                     ${monstro.zonas && monstro.zonas.length > 0
+//                         ? `
+//                         <table>
+//                             <caption>Fisiologia - Dano</caption>
+//                             <thead>
+//                                 ${monstro.zonas.map(zona => `<tr><td>${zona.parte}</td></tr>`).join('')}
+//                             </thead>
+//                             <tbody>
+//                             ${zona.padrao.map(item => `
+//                         <tr>
+//                             <td>${item.tipo}</td>
+//                             <td>${item.eficiencia.map(ef => `${ef.maneira}: ${ef.valor}`).join(', ')}</td>
+//                         </tr>`).join('')}
+//                             </tbody>
+//                         </table>`
+//                     : '<p>Nenhuma aflição disponível</p>'}               
+//                     </div>
+//                 </div>
+//             `;
+//             this.dataContainerBusca.appendChild(monstroElementExibir);
+//         });
+//     }
+// }// const formularioBusca = document.getElementById("formulario-busca");
 // formularioBusca.addEventListener("submit", async (event) => {
 //     event.preventDefault();
 //     const monsterLoader = new MonsterLoader();
 //     const monsters = await monsterLoader.loadMonsters();
 //     monsterLoader.displayBusca(monsters);
 // });
+// window.onload = async () => {
+//     const monsterLoader = new MonsterLoader();
+//     await monsterLoader.loadMonsters();
+//     const formularioBusca = document.getElementById("formulario-busca");
+//     formularioBusca.addEventListener("submit", async (event) => {
+//         event.preventDefault();
+//         const monsters = await monsterLoader.loadMonsters();
+//         monsterLoader.displayBusca(monsters);
+//     });
+// };
+
+document.getElementById('btn-create').addEventListener('click', () => {
+    const monstro = {
+        name = getElementById("name-do-monstro").value,
+        type = getElementById("type-do-monstro").value,
+        especie = getelementById("especie-do-monstro").value,
+        descricao = getElementById("descricao-do-monstro").value,
+        elementos = getElementById("elementos-do-monstro").value,
+        aflicoes = getElementById("aflicoes-do-monstro").value,
+        locais = getElementById("locais-do-monstro").value,
+        partes = getElementById("partes-do-monstro").value,
+        resistenciaaflicoes = getElementById("resistencia-do-monstro").value,
+        lowrank = getElementById("recompensa-lr-do-monstro").value,
+        highrank = getElementById("recompensa-hr-do-monstro").value,
+        partesquebraveis = getelementById("partes-quebraveis-do-monstro").value,
+        icone = getelementById("icon-do-monstro").value,
+        img = getelementById("img-do-monstro").value,
+
+    }
+    createMonstro(monstro)
+  });
+  
+  
+  // Refatorado
+  document.getElementById('btn-delete').addEventListener('click', () => {
+    const monstro = { 
+        id = getElementById("id-do-monstro-dlt").value,
+        name = getElementById("name-do-monstro-dlt")
+   }
+   deleteMonstro(monstro)
+  });
+  
+  // Refatorado
+  document.getElementById('btn-update').addEventListener('click', () => {
+    const monstro = {
+        id = getElementById("id-do-monstro-updt").value,
+        name = getElementById("name-do-monstro-updt").value,
+        type = getElementById("type-do-monstro-updt").value,
+        especie = getelementById("especie-do-monstro-updt").value,
+        descricao = getElementById("descricao-do-monstro-updt").value,
+        elementos = getElementById("elementos-do-monstro-updt").value,
+        aflicoes = getElementById("aflicoes-do-monstro-updt").value,
+        locais = getElementById("locais-do-monstro-updt").value,
+        partes = getElementById("partes-do-monstro-updt").value,
+        resistenciaaflicoes = getElementById("resistencia-do-monstro-updt").value,
+        lowrank = getElementById("recompensa-lr-do-monstro-updt").value,
+        highrank = getElementById("recompensa-hr-do-monstro-updt").value,
+        partesquebraveis = getelementById("partes-quebraveis-do-monstro-updt").value,
+        icone = getelementById("icon-do-monstro-updt").value,
+        img = getelementById("img-do-monstro-updt").value,
+    }
+    updateMonstro(monstro);
+  });
 
 
 
-window.onload = async () => {
-    const monsterLoader = new MonsterLoader();
-    await monsterLoader.loadMonsters();
-
-    const formularioBusca = document.getElementById("formulario-busca");
-    formularioBusca.addEventListener("submit", async (event) => {
-        event.preventDefault();
-        const monsters = await monsterLoader.loadMonsters();
-        monsterLoader.displayBusca(monsters);
-    });
-};
 
 
-// window.onload = () => {;loadAllMonsters().then(monstros => {generateElements(carregarMonstros(),);})}
 
-// const loadAllMonsters = () =>{return getAllMonsters().then(monstros => {return monstros;})}
-
-// const generateElements = () => {
-    
-//     constructor() ;{
-//         this.dataContainer = document.getElementById("todos-monstros");
-//     }
-//     carregarMonstros = async () => {
-//         const dataContainer = document.getElementById("todos-monstros");
-//         try { resp.forEach((monstro) => {
-//             const monstroElement = document.createElement("div") 
-//             monstroElement.innerHTML = `
-//             <div>
-//                 <p>${monstro.name}</p>
-//                 <p>${monstro.caracteristicas.zonadedano}</p>
-//             </div>
-//             `;
-//             dataContainer.appendChild(monstroElement);
-//         })
-            
-//         } catch (error) {console.log("Error >>>", error);}
-// }
-// }
 // class MonsterLoader {
 //     constructor() {
 //         this.dataContainer = document.getElementById("todos-monstros");

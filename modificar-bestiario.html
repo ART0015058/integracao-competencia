@@ -22,7 +22,7 @@
                 <div>
               <form id="resultado-busca" class="d-flex" role="search">
                 <input type="search" class="form-control me-2" placeholder="Rathalos" aria-label="Search" id="resultado-busca" name="resultado-busca"/>
-                <button class="btn btn-outline-light" type="submit" id="btn-busca"  onclick="pesquisarMonstros()">
+                <button class="btn btn-outline-light" type="submit" id="btn-busca">
                   <i class="fa fa-search"></i>
                 </button>
               </form>
@@ -56,71 +56,185 @@
       <div>
         <div id="resultado-busca" class="resultado-busca"></div>
         <div>
-          <form action="">
+          <form id="criarmonstro">
             <h2>Adicionar Monstro</h2>
+            
             <label for="name-do-monstro">Nome</label>
-            <input type="text">
+            <input id="name-do-monstro" type="text">
+            
             <label for="type-do-monstro">Tipo</label>
-            <input type="text">
+            <select name="type-do-monstro" id="type-do-monstro">
+              <option value="pequeno">Pequeno</option>
+              <option value="grande">Grande</option>
+            </select>
+            
             <label for="especie-do-monstro">Espécie</label>
-            <input type="text">
+            <input id="especie-do-monstro" type="text">
+            
             <label for="descricao-do-monstro">Descrição</label>
-            <input type="text">
-            <label for="elemento-do-monstro">Elemento</label>
-            <input type="text">
+            <textarea name="descricao-do-monstro" id="descricao-do-monstro" cols="60" rows="5"></textarea>
+            
+            <label for="elementos-do-monstro">Elemento</label>
+            <select name="elementos-do-monstro" id="elementos-do-monstro">
+              <option value="fogo">Fogo</option>
+              <option value="agua">Água</option>
+              <option value="trovao">Trovão</option>
+              <option value="gelo">Gelo</option>
+              <option value="dragao">Dragão</option>
+            </select>
+            
             <label for="aflicoes-do-monstro">Aflições que pode infligir</label>
-            <input type="text">
-            <label for="caracteristicas-do-monstro">Características</label>
-            <label for="caracteristicas-do-monstro">Zona de Dano</label>
-            <input type="text">
-            <label for="caracteristicas-do-monstro">Resistência a Aflições</label>
-            <input type="text">
-            <label for="recompensa-do-monstro">Recompensas</label>
-            <label for="recompensa-do-monstro">Low Rank</label>
-            <input type="text">
-            <label for="recompensa-do-monstro">High Rank</label>
-            <input type="text">
+            <select name="aflicoes-do-monstro" id="aflicoes-do-monstro">
+              <option value="veneno">Veneno</option>
+              <option value="paralisia">Paralisia</option>
+              <option value="sono">Sono</option>
+              <option value="blastblight">Blastblight</option>
+              <option value="fireblight">Fireblight</option>
+              <option value="waterblight">Waterblight</option>
+              <option value="thunderblight">thunderblight</option>
+              <option value="iceblight">Iceblight</option>
+              <option value="dragonblight">Dragonblight</option>
+              <option value="nocaute">Nocaute</option>
+              <option value="sangramento">Sangramento</option>
+            </select>
+
+            <label for="locais-do-monstro">Habitat</label>
+            <select name="locais-do-monstro" id="locais-do-monstro">
+              <option value="ancientForest">Ancient Forest</option>
+              <option value="wildspireWaste">WildspireWaste</option>
+              <option value="coralHighlands">Coral Highlands</option>
+              <option value="rottenVale">Rotten Vale</option>
+              <option value="eldersRecess">Elder's Recess</option>
+              <option value="everstream">Everstream</option>
+              <option value="greatravine">Great Ravine</option>
+            </select>
+            
+            <label for="partes-do-monstro">Partes</label>
+            <textarea name="partes-do-monstro" id="partes-do-monstro" cols="60" rows="20"></textarea>
+
+            <label for="resistencia-do-monstro">Resistência a Aflições</label>
+            <textarea name="resistencia-do-monstro" id="resistencia-do-monstro" cols="60" rows="20"></textarea>
+            
+            <label for="recompensa-lr-do-monstro">Recompensas Low Rank</label>
+            <textarea name="recompensa-lr-do-monstro" id="recompensa-lr-do-monstro" cols="60" rows="20"></textarea>
+
+            <label for="recompensa-hr-do-monstro">Recompensas High Rank</label>
+            <textarea name="recompensa-hr-do-monstro" id="recompensa-hr-do-monstro" cols="60" rows="20"></textarea>
+
             <label for="partes-quebraveis-do-monstro">Partes Quebráveis</label>
-            <input type="text">
-            <button>Adicionar Monstro</button>
+            <select name="partes-quebraveis-do-monstro" id="partes-quebraveis-do-monstro">
+              <option value="cabeca">Cabeça</option>
+              <option value="corpo">Corpo</option>
+              <option value="bracos">Braços</option>
+              <option value="pernas">Pernas</option>
+              <option value="asas">asas</option>
+              <option value="cauda">Cauda</option>
+            </select>
+
+            <label for="icon-do-monstro"></label>
+            <input id="icon-do-monstro" type="url">
+
+            <label for="img-do-monstro"></label>
+            <input id="img-do-monstro" type="url">
+            
+            <button id="btn-create">Adicionar Monstro</button>
           </form>
         </div>
         <div>
-          <form action="">
+          <form id="atualizarmonstro">
             <h2>Atualizar Monstro</h2>
-            <label for="name-do-monstro">Nome</label>
-            <input type="text">
-            <label for="type-do-monstro">Tipo</label>
-            <input type="text">
-            <label for="especie-do-monstro">Espécie</label>
-            <input type="text">
-            <label for="descricao-do-monstro">Descrição</label>
-            <input type="text">
-            <label for="elemento-do-monstro">Elemento</label>
-            <input type="text">
-            <label for="aflicoes-do-monstro">Aflições que pode infligir</label>
-            <input type="text">
-            <label for="caracteristicas-do-monstro">Características</label>
-            <label for="caracteristicas-do-monstro">Zona de Dano</label>
-            <input type="text">
-            <label for="caracteristicas-do-monstro">Resistência a Aflições</label>
-            <input type="text">
-            <label for="recompensa-do-monstro">Recompensas</label>
-            <label for="recompensa-do-monstro">Low Rank</label>
-            <input type="text">
-            <label for="recompensa-do-monstro">High Rank</label>
-            <input type="text">
-            <label for="partes-quebraveis-do-monstro">Partes Quebráveis</label>
-            <input type="text">
-            <button>Atualizar Monstro</button>
-          </form>
+            <label for="id-do-monstro-updt">Número do monstro</label>
+            <input id="id-do-monstro-updt" type="number">
+
+            <label for="name-do-monstro-updt">Nome</label>
+            <input id="name-do-monstro-updt" type="text">
+            
+            <label for="type-do-monstro-updt">Tipo</label>
+            <select name="type-do-monstro-updt" id="type-do-monstro-updt">
+              <option value="pequeno">Pequeno</option>
+              <option value="grande">Grande</option>
+            </select>
+            
+            <label for="especie-do-monstro-updt">Espécie</label>
+            <input id="especie-do-monstro-updt" type="text">
+            
+            <label for="descricao-do-monstro-updt">Descrição</label>
+            <textarea name="descricao-do-monstro-updt" id="descricao-do-monstro-updt" cols="60" rows="5"></textarea>
+            
+            <label for="elementos-do-monstro-updt">Elemento</label>
+            <select name="elementos-do-monstro-updt" id="elementos-do-monstro-updt">
+              <option value="fogo">Fogo</option>
+              <option value="agua">Água</option>
+              <option value="trovao">Trovão</option>
+              <option value="gelo">Gelo</option>
+              <option value="dragao">Dragão</option>
+            </select>
+            
+            <label for="aflicoes-do-monstro-updt">Aflições que pode infligir</label>
+            <select name="aflicoes-do-monstro-updt" id="aflicoes-do-monstro-updt">
+              <option value="veneno">Veneno</option>
+              <option value="paralisia">Paralisia</option>
+              <option value="sono">Sono</option>
+              <option value="blastblight">Blastblight</option>
+              <option value="fireblight">Fireblight</option>
+              <option value="waterblight">Waterblight</option>
+              <option value="thunderblight">thunderblight</option>
+              <option value="iceblight">Iceblight</option>
+              <option value="dragonblight">Dragonblight</option>
+              <option value="nocaute">Nocaute</option>
+              <option value="sangramento">Sangramento</option>
+            </select>
+
+            <label for="locais-do-monstro-updt">Habitat</label>
+            <select name="locais-do-monstro-updt" id="locais-do-monstro-updt">
+              <option value="ancientForest">Ancient Forest</option>
+              <option value="wildspireWaste">WildspireWaste</option>
+              <option value="coralHighlands">Coral Highlands</option>
+              <option value="rottenVale">Rotten Vale</option>
+              <option value="eldersRecess">Elder's Recess</option>
+              <option value="everstream">Everstream</option>
+              <option value="greatravine">Great Ravine</option>
+            </select>
+            
+            
+            <label for="partes-do-monstro-updt">Partes</label>
+            <textarea name="partes-do-monstro-updt" id="partes-do-monstro-updt" cols="60" rows="20"></textarea>
+
+            <label for="resistencia-do-monstro-updt">Resistência a Aflições</label>
+            <textarea name="resistencia-do-monstro-updt" id="resistencia-do-monstro-updt" cols="60" rows="20"></textarea>
+            
+            <label for="recompensa-lr-do-monstro-updt">Recompensas Low Rank</label>
+            <textarea name="recompensa-lr-do-monstro-updt" id="recompensa-lr-do-monstro-updt" cols="60" rows="20"></textarea>
+
+            <label for="recompensa-hr-do-monstro-updt">Recompensas High Rank</label>
+            <textarea name="recompensa-hr-do-monstro-updt" id="recompensa-hr-do-monstro-updt" cols="60" rows="20"></textarea>
+
+            <label for="partes-quebraveis-do-monstro-updt">Partes Quebráveis</label>
+            <select name="partes-quebraveis-do-monstro-updt" id="partes-quebraveis-do-monstro-updt">
+              <option value="cabeca">Cabeça</option>
+              <option value="corpo">Corpo</option>
+              <option value="bracos">Braços</option>
+              <option value="pernas">Pernas</option>
+              <option value="asas">asas</option>
+              <option value="cauda">Cauda</option>
+            </select>
+
+            <label for="icon-do-monstro-updt"></label>
+            <input id="icon-do-monstro-updt" type="url">
+
+            <label for="img-do-monstro-updt"></label>
+            <input id="img-do-monstro-updt" type="url">
+            
+            <button id="btn-update">Atualizar Monstro</button>
         </div>
         <div>
           <form action="">
-            <h2>Deleytr Monstro</h2>
-            <label for="nome-do-monstro">Nome do monstro</label>
+            <h2>Deletar Monstro</h2>
+            <label for="id-do-monstro-dlt">Número do monstro</label>
+            <input type="number">
+            <label id="name-do-monstro-dlt" for="name-do-monstro-dlt">Nome do monstro</label>
             <input type="text">
-            <button>Deletar Monstro</button>
+            <button id="btn-delete">Deletar Monstro</button>
           </form>
         </div>
         <div id="todos-monstros" class="todos-monstros"></div>
