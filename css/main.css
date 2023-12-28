@@ -124,6 +124,10 @@ footer > div{
     justify-content: center;
 
 }
+.hide{
+    display: none;
+}
+
 /*.cartao-conteudo*/
 
 h1{
